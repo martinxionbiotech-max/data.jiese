@@ -16,7 +16,7 @@ main_findings:
 limitations:
   - "Heterogeneity of included studies limits the strength of conclusions."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - ppu

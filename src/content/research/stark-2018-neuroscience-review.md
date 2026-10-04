@@ -15,7 +15,7 @@ main_findings:
 limitations:
   - "Narrative review; no quantitative synthesis of findings."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - reward-system

@@ -15,7 +15,7 @@ main_findings:
 limitations:
   - "Conceptual paper; the proposed alternative model is not yet empirically established."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - compulsive-sexual-behavior

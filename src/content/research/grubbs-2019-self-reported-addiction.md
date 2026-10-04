@@ -17,7 +17,7 @@ limitations:
   - "Cross-sectional design; cannot establish causation or direction of effects."
   - "Self-report measures of both use and perceived addiction."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - ppu

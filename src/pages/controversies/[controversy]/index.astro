@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../../../shared/components/BaseLayout.astro";
+import TypeBadge from "../../../../shared/components/TypeBadge.astro";
+import { getCollection, render } from 'astro:content';
+import { DATA_SITE_URL } from "../../../../shared/config/config";
+
+export async function getStaticPaths() {
+  const cs = await getCollection('controversies');
+  return cs.map((c) => ({ params: { controversy: c.data.controversy_id } }));
+}
+
+const { controversy } = Astro.params;
+const cs = await getCollection('controversies');
+const c = cs.find((x) => x.data.controversy_id === controversy);
+const { Content } = await render(c);
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title={`${c.data.question} — Evidence & Controversy`}
+  description={c.data.why_controversial}
+  canonical={`/controversies/${c.data.controversy_id}/`}
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "Controversies", url: "/controversies/" }, { name: c.data.question, url: `/controversies/${c.data.controversy_id}/` }]}
+>
+  <h1>{c.data.question}</h1>
+  <TypeBadge type="uncertain" />
+  <h2>Why this is controversial</h2>
+  <p>{c.data.why_controversial}</p>
+  <h2>Position A</h2>
+  <p>{c.data.position_a}</p>
+  <h3>Evidence supporting A</h3>
+  <ul>{c.data.evidence_a.map((e) => <li>{e}</li>)}</ul>
+  <h3>Limitations of A</h3>
+  <ul>{c.data.limitations_a.map((e) => <li>{e}</li>)}</ul>
+  <h2>Position B</h2>
+  <p>{c.data.position_b}</p>
+  <h3>Evidence supporting B</h3>
+  <ul>{c.data.evidence_b.map((e) => <li>{e}</li>)}</ul>
+  <h3>Limitations of B</h3>
+  <ul>{c.data.limitations_b.map((e) => <li>{e}</li>)}</ul>
+  <h2>What is relatively well established</h2>
+  <ul>{c.data.well_established.map((e) => <li>{e}</li>)}</ul>
+  <h2>What remains uncertain</h2>
+  <ul>{c.data.remains_uncertain.map((e) => <li>{e}</li>)}</ul>
+  {c.data.community_experience && (<><h2>Community experience</h2><p>{c.data.community_experience}</p></>)}
+  <h2>Current evidence assessment</h2>
+  <p>{c.data.current_assessment}</p>
+  <Content />
+  <p class="note">Last reviewed: {c.data.last_reviewed}. This page is educational information, not medical advice.</p>
+</BaseLayout>

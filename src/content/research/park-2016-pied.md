@@ -16,7 +16,7 @@ limitations:
   - "Based primarily on clinical reports and narrative review, not controlled studies."
   - "Causality is not established; the review has been criticized for selection bias and limited methodological rigor."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: low
+evidence_strength: limited
 tier: 3
 related_topics:
   - pied

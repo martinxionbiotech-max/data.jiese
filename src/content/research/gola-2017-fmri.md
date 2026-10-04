@@ -16,7 +16,7 @@ limitations:
   - "Small sample of treatment-seeking men; findings cannot be generalized to all users."
   - "Correlational design; does not prove that pornography 'causes' the observed brain differences."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - reward-system

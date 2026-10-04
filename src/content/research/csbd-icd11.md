@@ -16,7 +16,7 @@ main_findings:
 limitations:
   - "The ICD-11 is a diagnostic classification, not an empirical study; field testing for CSBD was limited relative to other disorders."
   - "Whether CSBD is best understood as an impulse-control disorder rather than an addictive or compulsive condition remains debated."
-evidence_strength: high
+evidence_strength: strong
 tier: 1
 related_topics:
   - csbd

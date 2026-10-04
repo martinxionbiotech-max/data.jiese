@@ -16,7 +16,7 @@ limitations:
   - "Review of heterogeneous studies of varying quality."
   - "Does not rule out problems in specific subgroups (e.g., heavy users or treatment-seeking populations)."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - pied

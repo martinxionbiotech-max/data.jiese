@@ -17,7 +17,7 @@ limitations:
   - "Self-report instrument; its addiction-based component structure is itself a point of scientific debate."
   - "Validation was largely in convenience samples of young adults."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - ppu

@@ -15,7 +15,7 @@ main_findings:
 limitations:
   - "Theoretical model; specific pathways require empirical testing."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - self-regulation

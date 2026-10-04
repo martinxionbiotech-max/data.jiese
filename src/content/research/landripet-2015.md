@@ -16,7 +16,7 @@ limitations:
   - "Cross-sectional design."
   - "Young, non-clinical sample; cannot rule out effects in clinical or older populations."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - pied

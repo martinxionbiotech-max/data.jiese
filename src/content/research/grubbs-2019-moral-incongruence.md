@@ -17,7 +17,7 @@ limitations:
   - "Relies predominantly on self-report measures of both use and perceived addiction."
   - "Does not resolve whether heavy pornography use has independent harms separate from moral distress."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: high
+evidence_strength: strong
 tier: 2
 related_topics:
   - ppu

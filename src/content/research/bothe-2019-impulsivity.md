@@ -16,7 +16,7 @@ limitations:
   - "Cross-sectional design; cannot establish direction of effects."
   - "Non-clinical convenience sample; findings may differ in treatment-seeking populations."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - impulse-control

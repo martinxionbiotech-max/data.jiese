@@ -65,11 +65,29 @@ export const CATEGORY_META: Record<CategoryKey, { title: string; description: st
   },
 };
 
+// Phase 2 (Part 9): EVIDENCE STRENGTH — five levels
 export const EVIDENCE_LABELS: Record<string, string> = {
-  high: 'High',
-  medium: 'Medium',
-  low: 'Low',
+  strong: 'Strong',
+  moderate: 'Moderate',
+  limited: 'Limited',
+  mixed: 'Mixed',
   uncertain: 'Uncertain',
+};
+// Phase 2 (Part 9): SOURCE TYPE — separate from evidence strength
+export const SOURCE_TYPE_LABELS: Record<string, string> = {
+  'clinical-guideline': 'Clinical guideline',
+  'diagnostic-classification': 'Diagnostic classification',
+  'systematic-review': 'Systematic review',
+  'meta-analysis': 'Meta-analysis',
+  'rct': 'Randomized controlled trial',
+  'cohort-study': 'Cohort study',
+  'cross-sectional': 'Cross-sectional study',
+  'neuroimaging': 'Neuroimaging study',
+  'clinical-study': 'Clinical study',
+  'qualitative': 'Qualitative study',
+  'case-report': 'Case report',
+  'expert-commentary': 'Expert commentary',
+  'community-report': 'Community report',
 };
 
 export const TIER_LABELS: Record<number, string> = {

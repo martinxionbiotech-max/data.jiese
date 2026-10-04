@@ -16,7 +16,7 @@ limitations:
   - "Small sample."
   - "Non-clinical sample; findings may not apply to people seeking treatment."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: low
+evidence_strength: limited
 tier: 2
 related_topics:
   - reward-system

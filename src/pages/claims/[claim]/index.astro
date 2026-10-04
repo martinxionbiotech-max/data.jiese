@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../../../shared/components/BaseLayout.astro";
+import TypeBadge from "../../../../shared/components/TypeBadge.astro";
+import { getCollection, render } from 'astro:content';
+import { DATA_SITE_URL, MAIN_SITE_URL } from "../../../../shared/config/config";
+
+export async function getStaticPaths() {
+  const claims = await getCollection('claims');
+  return claims.map((c) => ({ params: { claim: c.data.claim_id } }));
+}
+
+const { claim } = Astro.params;
+const claims = await getCollection('claims');
+const c = claims.find((x) => x.data.claim_id === claim);
+const { Content } = await render(c);
+
+const statusLabel: Record<string, string> = {
+  supported: 'Supported', 'partially-supported': 'Partially Supported', mixed: 'Mixed Evidence',
+  limited: 'Limited Evidence', 'not-established': 'Not Established', contradicted: 'Contradicted', unknown: 'Unknown',
+};
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title={`${c.data.claim} — Evidence Assessment`}
+  description={`Evidence assessment of the claim: ${c.data.claim} Status: ${statusLabel[c.data.status]}.`}
+  canonical={`/claims/${c.data.claim_id}/`}
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "Claims", url: "/claims/" }, { name: c.data.title, url: `/claims/${c.data.claim_id}/` }]}
+>
+  <h1>{c.data.claim}</h1>
+  <TypeBadge type="research" />
+  <p><strong>Status:</strong> {statusLabel[c.data.status]} ·
+  <strong>Evidence strength:</strong> {c.data.evidence_strength}</p>
+  <h2>Summary</h2>
+  <p>{c.data.summary}</p>
+  <h2>Current interpretation</h2>
+  <p>{c.data.current_interpretation}</p>
+  {c.data.community_reports && (<><h2>What the community reports</h2><p>{c.data.community_reports}</p></>)}
+  {c.data.uncertainties.length > 0 && (<><h2>Uncertainties</h2><ul>{c.data.uncertainties.map((u) => <li>{u}</li>)}</ul></>)}
+  <h2>Assessment</h2>
+  <Content />
+  <h2>Related</h2>
+  <ul>
+    {c.data.related_topics.map((t) => <li><a href={`/topics/${t}/`}>Topic: {t}</a></li>)}
+    {c.data.related_questions.map((q) => <li><a href={`${MAIN_SITE_URL}/problems/${q}/`}>Question: {q} (main site)</a></li>)}
+  </ul>
+  <p class="note">This is an educational evidence assessment, not medical advice.
+  Last reviewed: {c.data.last_reviewed}.</p>
+</BaseLayout>

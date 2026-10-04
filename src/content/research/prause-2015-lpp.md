@@ -17,7 +17,7 @@ limitations:
   - "Interpretation is contested; the study has been criticized on methodological and conceptual grounds."
   - "A single EEG measure (late positive potential) cannot settle a complex classification question."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - cue-reactivity-neural

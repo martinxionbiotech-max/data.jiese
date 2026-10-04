@@ -17,7 +17,7 @@ limitations:
   - "Cross-sectional design; cannot establish causation."
   - "Findings may not generalize beyond the studied population."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - cue-reactivity

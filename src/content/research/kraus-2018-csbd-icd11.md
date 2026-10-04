@@ -16,7 +16,7 @@ main_findings:
 limitations:
   - "Position and consensus paper rather than a primary empirical study."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - csbd

@@ -16,7 +16,7 @@ main_findings:
 limitations:
   - "Position/review paper reflecting the evidence available at the time."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - behavioral-addiction-debate

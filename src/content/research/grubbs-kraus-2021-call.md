@@ -16,7 +16,7 @@ main_findings:
 limitations:
   - "Conceptual/agenda-setting paper rather than new empirical data."
   - "verification needed (DOI/PMID not recorded)"
-evidence_strength: medium
+evidence_strength: moderate
 tier: 2
 related_topics:
   - ppu
