@@ -1,5 +1,9 @@
 ---
 research_id: de-alarcon-2019-systematic-review
+source_url: "https://pubmed.ncbi.nlm.nih.gov/30650522/"
+source_type: "systematic-review"
+pmid: "30650522"
+doi: "10.3390/jcm8010091"
 title: "Online Porn Addiction: What We Know and What We Don't—A Systematic Review of the Literature"
 content_type: research
 authors: "de Alarcón, R., de la Iglesia, J. I., Casado, N. M., & Montejo, A. L."
@@ -23,6 +27,7 @@ related_topics:
   - behavioral-addiction-debate
   - ppu-definition
   - relapse
+relevant_claims: ["porn-withdrawal-clinical-syndrome"]
 last_verified: "2026-10-04"
 ---
 

@@ -1,5 +1,9 @@
 ---
 research_id: bothe-2019-impulsivity
+source_url: "https://pubmed.ncbi.nlm.nih.gov/29913087/"
+source_type: "cross-sectional"
+pmid: "29913087"
+doi: "10.1080/00224499.2018.1480744"
 title: "Revisiting the Role of Impulsivity and Compulsivity in Problematic Sexual Behaviors"
 content_type: research
 authors: "Bőthe, B., Tóth-Király, I., Potenza, M. N., Griffiths, M. D., Orosz, G., & Demetrovics, Z."

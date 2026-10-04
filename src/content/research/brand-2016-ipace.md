@@ -1,5 +1,9 @@
 ---
 research_id: brand-2016-ipace
+source_url: "https://pubmed.ncbi.nlm.nih.gov/27590829/"
+source_type: "expert-commentary"
+pmid: "27590829"
+doi: "10.1016/j.neubiorev.2016.08.033"
 title: "Integrating psychological and neurobiological considerations regarding the development and maintenance of specific Internet-use disorders: An Interaction of Person-Affect-Cognition-Execution (I-PACE) model"
 content_type: research
 authors: "Brand, M., Young, K. S., Laier, C., Wölfling, K., & Potenza, M. N."
@@ -22,6 +26,7 @@ related_topics:
   - emotion-regulation
   - cue-reactivity
   - habit-formation
+relevant_claims: ["porn-permanently-damages-brain"]
 last_verified: "2026-10-04"
 ---
 

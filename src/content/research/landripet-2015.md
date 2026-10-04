@@ -1,5 +1,9 @@
 ---
 research_id: landripet-2015
+source_url: "https://pubmed.ncbi.nlm.nih.gov/25974236/"
+source_type: "cross-sectional"
+pmid: "25974236"
+doi: "10.1111/jsm.12877"
 title: "Is Pornography Use Associated with Sexual Difficulties and Dysfunctions among Younger Heterosexual Men?"
 content_type: research
 authors: "Landripet, I., & Štulhofer, A."
@@ -21,6 +25,7 @@ tier: 2
 related_topics:
   - pied
   - sexual-dysfunction-overview
+relevant_claims: ["pornography-causes-ed"]
 last_verified: "2026-10-04"
 ---
 

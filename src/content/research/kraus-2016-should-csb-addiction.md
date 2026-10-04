@@ -1,5 +1,9 @@
 ---
 research_id: kraus-2016-should-csb-addiction
+source_url: "https://pubmed.ncbi.nlm.nih.gov/26893127/"
+source_type: "expert-commentary"
+pmid: "26893127"
+doi: "10.1111/add.13297"
 title: "Should compulsive sexual behavior be considered an addiction?"
 content_type: research
 authors: "Kraus, S. W., Voon, V., & Potenza, M. N."
@@ -22,6 +26,7 @@ related_topics:
   - behavioral-addiction-debate
   - compulsive-sexual-behavior
   - csbd
+relevant_claims: ["porn-addiction-real-diagnosis"]
 last_verified: "2026-10-04"
 ---
 

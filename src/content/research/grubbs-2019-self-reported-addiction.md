@@ -1,5 +1,9 @@
 ---
 research_id: grubbs-2019-self-reported-addiction
+source_url: "https://pubmed.ncbi.nlm.nih.gov/30632378/"
+source_type: "cross-sectional"
+pmid: "30632378"
+doi: "10.1556/2006.7.2018.134"
 title: "Self-reported addiction to pornography in a nationally representative sample: The roles of use habits, religiousness, and moral incongruence"
 content_type: research
 authors: "Grubbs, J. B., Kraus, S. W., & Perry, S. L."
@@ -23,6 +27,7 @@ related_topics:
   - ppu
   - ppu-definition
   - behavioral-addiction-debate
+relevant_claims: ["porn-use-always-addiction"]
 last_verified: "2026-10-04"
 ---
 

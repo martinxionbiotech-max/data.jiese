@@ -1,5 +1,8 @@
 ---
 research_id: stark-2018-neuroscience-review
+source_url: "https://doi.org/10.1007/s40473-018-0162-9"
+source_type: "expert-commentary"
+doi: "10.1007/s40473-018-0162-9"
 title: "A current understanding of the behavioral neuroscience of compulsive sexual behavior disorder and problematic pornography use"
 content_type: research
 authors: "Stark, R., Klucken, T., Potenza, M. N., Brand, M., & Strahler, J."
@@ -22,6 +25,7 @@ related_topics:
   - neuroplasticity
   - cue-reactivity-neural
   - emotion-regulation
+relevant_claims: ["porn-permanently-damages-brain", "90-days-required-for-brain-recovery"]
 last_verified: "2026-10-04"
 ---
 

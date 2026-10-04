@@ -1,5 +1,8 @@
 ---
 research_id: prause-pfaus-2015
+source_url: "https://doi.org/10.1002/sm2.58"
+source_type: "cross-sectional"
+doi: "10.1002/sm2.58"
 title: "Viewing sexual stimuli associated with greater sexual responsiveness, not erectile dysfunction"
 content_type: research
 authors: "Prause, N., & Pfaus, J."
@@ -21,6 +24,7 @@ tier: 2
 related_topics:
   - pied
   - sexual-dysfunction-overview
+relevant_claims: ["pornography-causes-ed"]
 last_verified: "2026-10-04"
 ---
 

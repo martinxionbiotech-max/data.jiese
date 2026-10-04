@@ -8,7 +8,7 @@ status: not-established
 summary: "No research establishes that 90 days of abstinence produces specific brain changes. The 90-day figure is a community convention, not a scientific finding."
 evidence_strength: limited
 supporting_research: []
-contradicting_or_limiting_research: []
+contradicting_or_limiting_research: ["stark-2018-neuroscience-review"]
 community_reports: "The 90-day period is widely used as a goal in recovery communities and appears in many personal accounts."
 related_topics: ["neuroplasticity", "reward-system"]
 related_questions: []

@@ -8,7 +8,7 @@ status: contradicted
 summary: "This claim is not consistent with current classifications. Most people who view pornography do not meet criteria for a disorder, and use exists on a spectrum."
 evidence_strength: strong
 supporting_research: []
-contradicting_or_limiting_research: []
+contradicting_or_limiting_research: ["grubbs-2019-self-reported-addiction"]
 community_reports: "In some communities all use is framed as addiction. This framing is common but not clinically accurate."
 related_topics: ["ppu", "csbd", "behavioral-addiction-debate"]
 related_questions: ["is-porn-addiction-real"]

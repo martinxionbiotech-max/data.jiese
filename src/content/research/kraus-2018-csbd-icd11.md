@@ -1,5 +1,9 @@
 ---
 research_id: kraus-2018-csbd-icd11
+source_url: "https://pubmed.ncbi.nlm.nih.gov/29352554/"
+source_type: "diagnostic-classification"
+pmid: "29352554"
+doi: "10.1002/wps.20499"
 title: "Compulsive sexual behaviour disorder in the ICD-11"
 content_type: research
 authors: "Kraus, S. W., Krueger, R. B., Briken, P., First, M. B., Stein, D. J., Kaplan, M. S., Voon, V., Abdo, C. H. N., Grant, J. E., Atalla, E., & Reed, G. M."
@@ -23,6 +27,7 @@ related_topics:
   - csbd-icd11
   - behavioral-addiction-debate
   - impulse-control-disorders
+relevant_claims: ["porn-addiction-real-diagnosis"]
 last_verified: "2026-10-04"
 ---
 

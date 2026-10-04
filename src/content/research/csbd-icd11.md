@@ -1,5 +1,6 @@
 ---
 research_id: csbd-icd11
+source_type: "diagnostic-classification"
 title: "Compulsive Sexual Behaviour Disorder (CSBD) in the ICD-11"
 content_type: research
 authors: "World Health Organization"
@@ -24,7 +25,7 @@ related_topics:
   - behavioral-addiction-debate
   - impulse-control-disorders
   - compulsive-sexual-behavior
-source_url: "https://icd.who.int/browse11/l-m/en"
+source_url: "https://icd.who.int/browse/2024-01/mms/en#1630268048"
 last_verified: "2026-10-04"
 ---
 

@@ -1,5 +1,9 @@
 ---
 research_id: park-2016-pied
+source_url: "https://doi.org/10.3390/bs6030017"
+source_type: "case-report"
+pmid: "27527226"
+doi: "10.3390/bs6030017"
 title: "Is Internet Pornography Causing Sexual Dysfunctions? A Review with Clinical Reports"
 content_type: research
 authors: "Park, B. Y., Wilson, G., Berger, J., Christman, M., Reina, B., Bishop, F., Klam, W. P., & Doan, A. P."
@@ -21,6 +25,8 @@ tier: 3
 related_topics:
   - pied
   - sexual-dysfunction-overview
+notes: "2018 correction published regarding conflict-of-interest disclosures"
+relevant_claims: ["pornography-causes-ed"]
 last_verified: "2026-10-04"
 ---
 

@@ -1,5 +1,9 @@
 ---
 research_id: steele-2013-sexual-desire
+source_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3960022/"
+source_type: "neuroimaging"
+pmid: "24693355"
+doi: "10.3402/snp.v3i0.20770"
 title: "Sexual desire, not hypersexuality, is related to neurophysiological responses elicited by sexual images"
 content_type: research
 authors: "Steele, V. R., Staley, C., Fong, T., & Prause, N."

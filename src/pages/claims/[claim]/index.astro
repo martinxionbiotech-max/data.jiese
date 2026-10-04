@@ -37,6 +37,18 @@ const statusLabel: Record<string, string> = {
   <p>{c.data.current_interpretation}</p>
   {c.data.community_reports && (<><h2>What the community reports</h2><p>{c.data.community_reports}</p></>)}
   {c.data.uncertainties.length > 0 && (<><h2>Uncertainties</h2><ul>{c.data.uncertainties.map((u) => <li>{u}</li>)}</ul></>)}
+  {c.data.supporting_research?.length > 0 && (
+    <>
+      <h2>Supporting research</h2>
+      <ul>{c.data.supporting_research.map((r) => <li><a href={`/research/${r}/`}>{r.replaceAll("-", " ")}</a></li>)}</ul>
+    </>
+  )}
+  {c.data.contradicting_or_limiting_research?.length > 0 && (
+    <>
+      <h2>Contradicting or limiting research</h2>
+      <ul>{c.data.contradicting_or_limiting_research.map((r) => <li><a href={`/research/${r}/`}>{r.replaceAll("-", " ")}</a></li>)}</ul>
+    </>
+  )}
   <h2>Assessment</h2>
   <Content />
   <h2>Related</h2>

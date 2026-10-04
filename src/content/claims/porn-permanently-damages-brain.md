@@ -8,7 +8,7 @@ status: not-established
 summary: "No high-quality evidence establishes that pornography use causes permanent brain damage. The brain changes through many ordinary activities; claims of permanent, pornography-specific damage exceed the evidence."
 evidence_strength: limited
 supporting_research: []
-contradicting_or_limiting_research: []
+contradicting_or_limiting_research: ["stark-2018-neuroscience-review", "brand-2016-ipace"]
 community_reports: "This claim circulates widely in some recovery communities."
 related_topics: ["neuroplasticity", "reward-system", "dopamine"]
 related_questions: []

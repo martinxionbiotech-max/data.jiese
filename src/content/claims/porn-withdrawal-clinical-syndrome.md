@@ -8,7 +8,7 @@ status: not-established
 summary: "Some people report withdrawal-like experiences when stopping pornography use, but there is no established clinical withdrawal syndrome for pornography use."
 evidence_strength: limited
 supporting_research: []
-contradicting_or_limiting_research: []
+contradicting_or_limiting_research: ["de-alarcon-2019-systematic-review"]
 community_reports: "Community members often describe urges, irritability, and mood changes in early abstinence. These self-reports are real experiences but do not establish a clinical syndrome."
 related_topics: ["withdrawal-definition", "craving"]
 related_questions: ["how-long-does-porn-withdrawal-last"]

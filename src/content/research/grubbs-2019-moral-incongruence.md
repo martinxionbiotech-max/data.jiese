@@ -1,5 +1,9 @@
 ---
 research_id: grubbs-2019-moral-incongruence
+source_url: "https://pubmed.ncbi.nlm.nih.gov/30076491/"
+source_type: "cross-sectional"
+pmid: "30076491"
+doi: "10.1007/s10508-018-1248-x"
 title: "Pornography Problems Due to Moral Incongruence: An Integrative Model with a Systematic Review and Meta-Analysis"
 content_type: research
 authors: "Grubbs, J. B., Perry, S. L., Wilt, J. A., & Reid, R. C."

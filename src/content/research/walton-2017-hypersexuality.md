@@ -1,5 +1,9 @@
 ---
 research_id: walton-2017-hypersexuality
+source_url: "https://pubmed.ncbi.nlm.nih.gov/28687897/"
+source_type: "expert-commentary"
+pmid: "28687897"
+doi: "10.1007/s10508-017-0991-8"
 title: "Hypersexuality: A Critical Review and Introduction to the 'Sexhavior Cycle'"
 content_type: research
 authors: "Walton, M. T., Cantor, J. M., Bhullar, N., & Lykins, A. D."

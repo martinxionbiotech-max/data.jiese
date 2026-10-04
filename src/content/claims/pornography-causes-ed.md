@@ -7,8 +7,8 @@ claim_type: medical
 status: not-established
 summary: "Clinical reports of erection difficulties attributed to pornography use exist, but causal evidence is limited. The relationship between pornography use and erectile function is not established by high-quality research."
 evidence_strength: limited
-supporting_research: []
-contradicting_or_limiting_research: []
+supporting_research: ["park-2016-pied"]
+contradicting_or_limiting_research: ["landripet-2015", "prause-pfaus-2015"]
 community_reports: "Some community members describe erection difficulties they attribute to pornography use. These are self-reports and cannot establish causation."
 related_topics: ["pied", "sexual-dysfunction-overview"]
 related_questions: ["does-quitting-porn-improve-sexual-function"]

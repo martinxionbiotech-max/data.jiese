@@ -1,5 +1,9 @@
 ---
 research_id: gola-2017-fmri
+source_url: "https://pubmed.ncbi.nlm.nih.gov/28409565/"
+source_type: "neuroimaging"
+pmid: "28409565"
+doi: "10.1038/npp.2017.78"
 title: "Can pornography be addictive? An fMRI study of men seeking treatment for problematic pornography use"
 content_type: research
 authors: "Gola, M., Wordecha, M., Sescousse, G., Lew-Starowicz, M., Kossowski, B., Wypych, M., Makeig, S., Potenza, M. N., & Marchewka, A."

@@ -1,5 +1,9 @@
 ---
 research_id: prause-2015-lpp
+source_url: "https://pubmed.ncbi.nlm.nih.gov/26095441/"
+source_type: "neuroimaging"
+pmid: "26095441"
+doi: "10.1016/j.biopsycho.2015.06.005"
 title: "Modulation of late positive potentials by sexual images in problem users and controls inconsistent with 'porn addiction'"
 content_type: research
 authors: "Prause, N., Steele, V. R., Staley, C., Sabatinelli, D., & Hajcak, G."

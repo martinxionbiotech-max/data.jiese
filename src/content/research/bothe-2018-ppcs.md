@@ -1,5 +1,9 @@
 ---
 research_id: bothe-2018-ppcs
+source_url: "https://pubmed.ncbi.nlm.nih.gov/28276929/"
+source_type: "cross-sectional"
+pmid: "28276929"
+doi: "10.1080/00224499.2017.1291798"
 title: "The Development of the Problematic Pornography Consumption Scale (PPCS)"
 content_type: research
 authors: "Bőthe, B., Tóth-Király, I., Zsila, Á., Griffiths, M. D., Demetrovics, Z., & Orosz, G."

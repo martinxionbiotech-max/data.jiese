@@ -1,5 +1,9 @@
 ---
 research_id: voon-2014-cue-reactivity
+source_url: "https://pubmed.ncbi.nlm.nih.gov/25013940/"
+source_type: "neuroimaging"
+pmid: "25013940"
+doi: "10.1371/journal.pone.0102419"
 title: "Neural correlates of sexual cue reactivity in individuals with and without compulsive sexual behaviours"
 content_type: research
 authors: "Voon, V., Mole, T. B., Banca, P., Porter, L., Morris, L., Mitchell, S., Lapa, T. R., Karr, J., Harrison, N. A., Potenza, M. N., & Irvine, M."

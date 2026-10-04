@@ -73,6 +73,12 @@ const jsonLd: Record<string, unknown> = {
     <p>{r.main_question ?? "Not recorded."}</p>
   </section>
 
+  {r.relevant_claims?.length > 0 && (
+    <>
+      <h2>Related claims</h2>
+      <ul>{r.relevant_claims.map((c) => <li><a href={`/claims/${c}/`}>{c.replaceAll("-", " ")}</a></li>)}</ul>
+    </>
+  )}
   <Content />
 
   <section>

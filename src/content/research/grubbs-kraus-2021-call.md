@@ -1,5 +1,8 @@
 ---
 research_id: grubbs-kraus-2021-call
+source_url: "https://doi.org/10.1177/0963721420979594"
+source_type: "expert-commentary"
+doi: "10.1177/0963721420979594"
 title: "Pornography Use and Psychological Science: A Call for Consideration"
 content_type: research
 authors: "Grubbs, J. B., & Kraus, S. W."
@@ -22,6 +25,7 @@ related_topics:
   - ppu
   - behavioral-addiction-debate
   - ppu-definition
+relevant_claims: ["porn-addiction-real-diagnosis"]
 last_verified: "2026-10-04"
 ---
 
