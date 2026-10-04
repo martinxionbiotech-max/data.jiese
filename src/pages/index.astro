@@ -27,10 +27,12 @@ const statement =
   title="Porn Recovery Research & Knowledge Library"
   description="A structured knowledge base on what the evidence and accumulated experience actually show about problematic pornography use and compulsive sexual behaviour — clearly separating what is known, what is not known, and what is debated."
   canonical="/"
+  ogImage={DATA_SITE_URL + "/images/hero-home.webp"}
   jsonLd={org}
   nav={DATA_NAV}
 >
   <section class="hero">
+    <img src="/images/hero-home.webp" alt="A quiet library interior, a metaphor for the knowledge base" class="hero-img" width="1600" height="900" />
     <h1>Porn Recovery Research &amp; Knowledge Library</h1>
     <p class="lede">A structured knowledge base answering one question:
     <strong>what does the evidence and accumulated experience actually show?</strong></p>
@@ -83,6 +85,7 @@ const statement =
 
   <style>
     .hero { padding: var(--space-6) 0 var(--space-3); }
+    .hero-img { width: 100%; height: auto; border-radius: var(--radius-md, 10px); margin-bottom: var(--space-4); display: block; }
     .lede { font-size: 18px; color: var(--color-text-soft); max-width: 700px; }
     .statement { background: var(--color-bg-alt); border-left: 3px solid var(--color-accent);
       padding: var(--space-4) var(--space-5); margin: var(--space-4) 0; }
