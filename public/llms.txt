@@ -1,0 +1,24 @@
+# Porn Recovery Research & Knowledge Library
+
+The evidence layer of the recovery platform: research summaries with source-type and
+evidence-strength ratings, a claims database with explicit statuses, and structured
+controversies. Educational information; not medical advice.
+
+## Core sections
+
+- Research: https://data.selfcontrolatlas.com/research/ — 20 study summaries (DOI/PMID where verified)
+- Topics: https://data.selfcontrolatlas.com/topics/ — 30 concept pages
+- Claims: https://data.selfcontrolatlas.com/claims/ — 11 common claims rated against evidence
+- Controversies: https://data.selfcontrolatlas.com/controversies/ — 4 structured scientific debates
+- Evidence standards: https://data.selfcontrolatlas.com/evidence/ — source type × evidence strength
+- References: https://data.selfcontrolatlas.com/references/
+
+## Policies
+
+- Disclaimer: https://data.selfcontrolatlas.com/disclaimer/
+- Editorial Policy: https://data.selfcontrolatlas.com/editorial-policy/
+- Privacy: https://data.selfcontrolatlas.com/privacy-policy/
+
+## Main site
+
+- https://selfcontrolatlas.com/ — experiences, patterns, triggers, strategies, editorial analysis
