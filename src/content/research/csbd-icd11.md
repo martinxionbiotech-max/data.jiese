@@ -26,6 +26,7 @@ related_topics:
   - impulse-control-disorders
   - compulsive-sexual-behavior
 source_url: "https://icd.who.int/browse/2024-01/mms/en#1630268048"
+method: "Diagnostic classification (WHO ICD-11)"
 last_verified: "2026-10-04"
 ---
 

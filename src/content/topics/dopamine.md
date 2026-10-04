@@ -19,6 +19,10 @@ what_we_dont_know:
   - "Whether any such changes are harmful, reversible, or clinically meaningful."
 what_is_debated:
   - "Whether PPU involves dopamine changes comparable to substance addiction."
+evidence_strength: "mixed"
+reasonable_conclusion: "Dopamine is genuinely involved in reward and sexual motivation, but popular claims that pornography 'depletes' or 'fries' dopamine receptors are pseudoscientific extrapolations. The honest summary: dopamine systems participate in the behavior; 'dopamine damage' narratives do not describe any established finding."
+what_evidence_does_not_show: "No evidence shows pornography use causes lasting dopamine system damage in humans, or that 'dopamine fasting' or 'rebooting' restores anything measurable."
+why_evidence_difficult: "Neuroimaging studies are small, use varied measures, and cannot distinguish cause from effect; popular content systematically oversimplifies incentive-salience research."
 related_research:
   - gola-2017-fmri
   - voon-2014-cue-reactivity

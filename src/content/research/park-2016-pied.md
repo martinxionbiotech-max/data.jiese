@@ -27,6 +27,8 @@ related_topics:
   - sexual-dysfunction-overview
 notes: "2018 correction published regarding conflict-of-interest disclosures"
 relevant_claims: ["pornography-causes-ed"]
+population: "Published literature and clinical case reports"
+method: "Review with clinical case reports"
 last_verified: "2026-10-04"
 ---
 

@@ -28,6 +28,8 @@ related_topics:
   - ppu-definition
   - relapse
 relevant_claims: ["porn-withdrawal-clinical-syndrome"]
+population: "Published literature on online pornography addiction"
+method: "Systematic review"
 last_verified: "2026-10-04"
 ---
 

@@ -64,6 +64,9 @@ const jsonLd: Record<string, unknown> = {
     {r.year && <div><dt>Year</dt><dd>{r.year}</dd></div>}
     {r.journal && <div><dt>Journal</dt><dd>{r.journal}</dd></div>}
     {r.research_type && <div><dt>Type</dt><dd>{RESEARCH_TYPE_LABELS[r.research_type] ?? r.research_type}</dd></div>}
+    {r.population && <div><dt>Population</dt><dd>{r.population}</dd></div>}
+    {r.sample_size && <div><dt>Sample size</dt><dd>{r.sample_size}</dd></div>}
+    {r.method && <div><dt>Method</dt><dd>{r.method}</dd></div>}
     {r.source_url && <div><dt>Source</dt><dd><a href={r.source_url} rel="noopener">{r.source_url}</a></dd></div>}
     <div><dt>Last verified</dt><dd>{r.last_verified}</dd></div>
   </dl>
@@ -86,6 +89,16 @@ const jsonLd: Record<string, unknown> = {
     <ul>
       {r.main_findings.map((f) => <li>{f}</li>)}
     </ul>
+  </section>
+
+  <section>
+    <h2>What this study can support</h2>
+    <p>{r.clinical_relevance ?? "The study's stated findings within its sample and design."}</p>
+  </section>
+
+  <section>
+    <h2>What it cannot establish</h2>
+    <p>{r.relevance_to_ppu && r.relevance_to_ppu.startsWith("The study does not") ? r.relevance_to_ppu : "Causal conclusions beyond the study design; generalizations to populations, behaviors, or contexts outside the sample; and any claim not directly measured."}</p>
   </section>
 
   <section>

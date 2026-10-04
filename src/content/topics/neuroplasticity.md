@@ -19,6 +19,10 @@ what_we_dont_know:
   - "Whether any observed changes are harmful or reversible."
 what_is_debated:
   - "Whether PPU-associated brain differences reflect addiction-related plasticity or ordinary variation in sexual interest and behaviour."
+evidence_strength: "moderate"
+reasonable_conclusion: "The brain changes with experience, and sexual behavior is no exception. But the leap from 'the brain is plastic' to 'pornography use causes specific harmful brain changes' is not supported. Neuroplasticity is a general property of brains, not a mechanism that validates specific claims."
+what_evidence_does_not_show: "Evidence does not show pornography-specific brain damage or that any particular recovery practice 'rewires' the brain in a measured way."
+why_evidence_difficult: "Every behavior changes the brain somewhat; the relevant question — whether specific changes are harmful, lasting, or clinically meaningful — is rarely addressed by studies that get cited in communities."
 related_research:
   - stark-2018-neuroscience-review
   - gola-2017-fmri

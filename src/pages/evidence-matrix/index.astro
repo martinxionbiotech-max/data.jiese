@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { MATRIX_TOPICS } from "../../lib/matrix";
+import { DATA_NAV } from "../../lib/nav";
+
+const research = await getCollection('research');
+const claims = await getCollection('claims');
+const researchMap = new Map(research.map((r) => [r.data.research_id, r]));
+const claimsMap = new Map(claims.map((c) => [c.data.claim_id, c]));
+
+const rows = MATRIX_TOPICS.map((t) => ({
+  ...t,
+  researchRecs: t.research_ids.map((id) => researchMap.get(id)).filter(Boolean),
+  claimRec: claimsMap.get(t.claim_id),
+}));
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  name: "SelfControlAtlas Evidence Matrix",
+  description: "Ten core topics rated against the available research: claim, study type, population, finding, limitation, evidence strength, and current interpretation.",
+  url: `${DATA_SITE_URL}/evidence-matrix/`,
+};
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title="Evidence Matrix"
+  description="Ten core topics rated against the available research: claim, studies, populations, findings, limitations, evidence strength, and current interpretation."
+  canonical="/evidence-matrix/"
+  jsonLd={jsonLd}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Evidence Matrix", url: "/evidence-matrix/" },
+  ]}
+  nav={DATA_NAV}
+>
+  <h1>Evidence Matrix</h1>
+  <p class="lede">Ten frequently debated claims, rated against the research records in this
+  library. Study type, population, findings, and limitations come from the individual
+  <a href="/research/">research records</a>; "current interpretation" is this platform's
+  original synthesis — read it as careful judgment, not as a research finding.</p>
+
+  {rows.map((t) => (
+    <section class="matrix-topic">
+      <h2 id={t.topic_id}>{t.title}</h2>
+      <p><strong>Claim:</strong> "{t.claim}"{" "}
+        {t.claimRec && (
+          <span>— <a href={`/claims/${t.claim_id}/`}>claim assessment</a></span>
+        )}
+      </p>
+      <table>
+        <thead>
+          <tr><th>Study</th><th>Type</th><th>Population</th><th>Finding</th><th>Limitation</th></tr>
+        </thead>
+        <tbody>
+          {t.researchRecs.map((r) => (
+            <tr>
+              <td><a href={`/research/${r.data.research_id}/`}>{r.data.title}</a></td>
+              <td>{r.data.research_type ?? "—"}</td>
+              <td>{r.data.population ?? "—"}{r.data.sample_size ? ` (n=${r.data.sample_size})` : ""}</td>
+              <td>{r.data.main_findings[0] ?? "—"}</td>
+              <td>{r.data.limitations[0] ?? "—"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p><strong>Current interpretation:</strong> {t.current_interpretation}</p>
+    </section>
+  ))}
+
+  <h2>How to read this matrix</h2>
+  <p>Each row is a claim placed next to the studies this library holds on that topic. Empty
+  cells reflect what this library does <em>not</em> hold, not necessarily what does not exist.
+  "Current interpretation" statements stay within what the cited records can support; where the
+  evidence is thin, the interpretation says so. This matrix is educational, not clinical guidance.</p>
+
+  <style>
+    .matrix-topic { margin: var(--space-6, 2rem) 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td { border: 1px solid var(--color-border, #e0e6ee); padding: var(--space-2, 0.5rem); text-align: left; vertical-align: top; }
+    th { background: var(--color-bg-soft, #f7f9fb); }
+  </style>
+</BaseLayout>

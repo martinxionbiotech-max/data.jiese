@@ -29,6 +29,10 @@ const research = defineCollection({
     source_type: z.enum(['clinical-guideline','diagnostic-classification','systematic-review','meta-analysis','rct','cohort-study','cross-sectional','neuroimaging','clinical-study','qualitative','case-report','expert-commentary','community-report']).optional(),
     evidence_strength: z.enum(['strong','moderate','limited','mixed','uncertain']).default('uncertain'),
     research_question: z.string().optional(),
+    // Phase 2 Upgrade: original synthesis fields
+    reasonable_conclusion: z.string().optional(),
+    what_evidence_does_not_show: z.string().optional(),
+    why_evidence_difficult: z.string().optional(),
     relevant_claims: z.array(z.string()).default([]),
     relevant_questions: z.array(z.string()).default([]),
     relevant_patterns: z.array(z.string()).default([]),

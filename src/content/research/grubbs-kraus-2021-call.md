@@ -26,6 +26,7 @@ related_topics:
   - behavioral-addiction-debate
   - ppu-definition
 relevant_claims: ["porn-addiction-real-diagnosis"]
+method: "Perspective / commentary"
 last_verified: "2026-10-04"
 ---
 

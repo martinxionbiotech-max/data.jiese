@@ -25,6 +25,7 @@ related_topics:
   - compulsive-sexual-behavior
   - behavioral-addiction-debate
   - csbd
+method: "Critical review introducing the Sexhavior Cycle"
 last_verified: "2026-10-04"
 ---
 

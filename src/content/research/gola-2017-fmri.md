@@ -27,6 +27,9 @@ related_topics:
   - dopamine
   - cue-reactivity-neural
   - craving
+population: "Men seeking treatment for problematic pornography use and matched controls"
+sample_size: "28 treatment-seeking / 24 controls"
+method: "fMRI cue-reactivity study"
 last_verified: "2026-10-04"
 ---
 

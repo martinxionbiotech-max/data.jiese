@@ -26,6 +26,7 @@ related_topics:
   - cue-reactivity-neural
   - emotion-regulation
 relevant_claims: ["porn-permanently-damages-brain", "90-days-required-for-brain-recovery"]
+method: "Narrative review of neuroscience evidence"
 last_verified: "2026-10-04"
 ---
 

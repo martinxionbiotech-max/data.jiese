@@ -28,6 +28,7 @@ related_topics:
   - behavioral-addiction-debate
   - impulse-control-disorders
 relevant_claims: ["porn-addiction-real-diagnosis"]
+method: "Commentary / announcement of ICD-11 inclusion"
 last_verified: "2026-10-04"
 ---
 

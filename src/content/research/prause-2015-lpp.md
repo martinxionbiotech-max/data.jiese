@@ -27,6 +27,9 @@ related_topics:
   - cue-reactivity-neural
   - behavioral-addiction-debate
   - reward-system
+population: "Men and women reporting problems regulating pornography viewing"
+sample_size: "55 problem users"
+method: "EEG (late positive potential) study"
 last_verified: "2026-10-04"
 ---
 

@@ -28,6 +28,8 @@ related_topics:
   - ppu-definition
   - behavioral-addiction-debate
 relevant_claims: ["porn-use-always-addiction"]
+population: "Nationally representative sample of US internet users"
+method: "Cross-sectional survey"
 last_verified: "2026-10-04"
 ---
 

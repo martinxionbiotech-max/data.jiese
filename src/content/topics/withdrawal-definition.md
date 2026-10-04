@@ -19,6 +19,10 @@ what_we_dont_know:
   - "The prevalence, duration, and mechanisms of reported withdrawal-like experiences."
 what_is_debated:
   - "Whether pornography withdrawal is a real, distinct phenomenon or better explained by habit disruption, mood, and expectation."
+evidence_strength: "limited"
+reasonable_conclusion: "Some people report discomfort — urges, irritability, low mood — in the first weeks of stopping. Whether these constitute a clinical withdrawal syndrome is not established. The reports are real; the diagnostic label is not."
+what_evidence_does_not_show: "Evidence does not establish a medically defined withdrawal syndrome for pornography, with predictable symptoms and timeline."
+why_evidence_difficult: "Reported symptoms overlap with everyday stress and mood variation, and no controlled studies isolate abstinence effects."
 related_research:
   - bothe-2018-ppcs
   - kraus-2016-should-csb-addiction

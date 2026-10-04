@@ -28,6 +28,9 @@ related_topics:
   - ppu-definition
   - withdrawal-definition
   - relapse
+population: "Hungarian community adults"
+sample_size: "772"
+method: "Cross-sectional survey; scale development and validation (PPCS)"
 last_verified: "2026-10-04"
 ---
 

@@ -26,6 +26,9 @@ related_topics:
   - impulse-control
   - compulsive-sexual-behavior
   - impulse-control-disorders
+population: "Large community sample, men and women"
+sample_size: "13,778"
+method: "Cross-sectional survey"
 last_verified: "2026-10-04"
 ---
 

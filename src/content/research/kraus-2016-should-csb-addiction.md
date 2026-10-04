@@ -27,6 +27,7 @@ related_topics:
   - compulsive-sexual-behavior
   - csbd
 relevant_claims: ["porn-addiction-real-diagnosis"]
+method: "Narrative review and commentary"
 last_verified: "2026-10-04"
 ---
 

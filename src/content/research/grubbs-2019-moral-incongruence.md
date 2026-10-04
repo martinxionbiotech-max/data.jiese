@@ -28,6 +28,8 @@ related_topics:
   - ppu-definition
   - behavioral-addiction-debate
   - compulsive-sexual-behavior
+population: "Pooled US adult samples"
+method: "Survey studies testing an integrative model"
 last_verified: "2026-10-04"
 ---
 

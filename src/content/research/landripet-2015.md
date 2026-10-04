@@ -26,6 +26,8 @@ related_topics:
   - pied
   - sexual-dysfunction-overview
 relevant_claims: ["pornography-causes-ed"]
+population: "Younger heterosexual men, Croatia"
+method: "Cross-sectional survey"
 last_verified: "2026-10-04"
 ---
 

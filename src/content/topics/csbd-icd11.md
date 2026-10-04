@@ -20,6 +20,10 @@ what_we_dont_know:
 what_is_debated:
   - "Whether CSBD is best understood as an impulse-control disorder, a compulsion, or an addiction."
   - "Whether the diagnostic criteria over- or under-include people who use pornography heavily but without distress."
+evidence_strength: "strong"
+reasonable_conclusion: "The ICD-11 CSBD definition is the authoritative diagnostic reference for this platform. Its criteria — persistent failure to control impulses causing marked distress or impairment over six months or more — are the appropriate standard for discussing compulsive sexual behavior."
+what_evidence_does_not_show: "The classification does not validate any specific self-help program, brain-based explanation, or timeline claim popular in communities."
+why_evidence_difficult: "Diagnostic thresholds are clinical judgments; the same behavior can be interpreted through multiple frameworks."
 related_research:
   - csbd-icd11
   - kraus-2018-csbd-icd11

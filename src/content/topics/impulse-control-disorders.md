@@ -19,6 +19,10 @@ what_we_dont_know:
   - "The underlying mechanisms of impulse-control failure in sexual behaviour."
 what_is_debated:
   - "Whether CSBD belongs in the impulse-control chapter, the addictive-disorders chapter, or elsewhere."
+evidence_strength: "strong"
+reasonable_conclusion: "ICD-11 classifies CSBD among impulse-control disorders, a deliberate placement that reflects the WHO's assessment of current evidence. This is the authoritative classification and the appropriate framing for educational content."
+what_evidence_does_not_show: "The classification does not settle the scientific debate about addiction mechanisms; it reflects a conservative, evidence-gated decision."
+why_evidence_difficult: "Classification debates involve heterogeneous evidence, cultural context, and risk of over-pathologizing normal sexual behavior."
 related_research:
   - csbd-icd11
   - kraus-2018-csbd-icd11

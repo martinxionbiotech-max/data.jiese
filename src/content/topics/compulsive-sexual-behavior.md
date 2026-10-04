@@ -19,6 +19,10 @@ what_we_dont_know:
   - "How it relates to heavy but non-distressing use."
 what_is_debated:
   - "Whether compulsive sexual behaviour is an addiction, a compulsion, or an impulse-control problem."
+evidence_strength: "moderate"
+reasonable_conclusion: "Compulsive sexual behavior is a well-documented clinical phenomenon: a persistent pattern of sexual behavior that feels out of control and causes distress or impairment. The scientific debate concerns its best classification (impulse-control vs addiction), not its existence."
+what_evidence_does_not_show: "Evidence does not establish that CSB involves the same mechanisms as substance addiction, despite overlapping features."
+why_evidence_difficult: "Definitions vary across studies, and self-report measures capture moral distress alongside behavioral dyscontrol."
 related_research:
   - csbd-icd11
   - kraus-2016-should-csb-addiction

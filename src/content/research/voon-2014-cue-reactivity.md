@@ -28,6 +28,9 @@ related_topics:
   - cue-reactivity-neural
   - craving
   - reward-system
+population: "Men with compulsive sexual behavior (treatment-seeking) and matched controls"
+sample_size: "19 CSB / 19 controls"
+method: "fMRI cue-reactivity study"
 last_verified: "2026-10-04"
 ---
 

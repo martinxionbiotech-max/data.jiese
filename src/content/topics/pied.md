@@ -19,6 +19,10 @@ what_we_dont_know:
   - "The mechanism by which any such effect might occur."
 what_is_debated:
   - "Whether PIED is a real, prevalent clinical entity or largely a community-constructed explanation."
+evidence_strength: "mixed"
+reasonable_conclusion: "PIED is a plausible clinical hypothesis with case-report support, not an established diagnosis. For any individual with erection difficulties, the responsible path is medical evaluation first; anxiety about 'porn damage' is itself a known contributor to performance problems."
+what_evidence_does_not_show: "The evidence does not establish that pornography use is a common cause of ED in young men, nor a reliable treatment effect from quitting."
+why_evidence_difficult: "The main supporting literature is case reports with conflicts of interest; large population studies conflict; causality is untestable in practice."
 related_research:
   - park-2016-pied
   - prause-pfaus-2015

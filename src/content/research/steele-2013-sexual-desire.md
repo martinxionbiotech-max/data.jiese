@@ -26,6 +26,9 @@ related_topics:
   - reward-system
   - cue-reactivity-neural
   - behavioral-addiction-debate
+population: "Men and women viewing sexual images"
+sample_size: "52"
+method: "EEG study of neurophysiological response to sexual images"
 last_verified: "2026-10-04"
 ---
 

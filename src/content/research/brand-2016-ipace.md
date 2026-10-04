@@ -27,6 +27,7 @@ related_topics:
   - cue-reactivity
   - habit-formation
 relevant_claims: ["porn-permanently-damages-brain"]
+method: "Theoretical model paper (I-PACE framework)"
 last_verified: "2026-10-04"
 ---
 

@@ -25,6 +25,8 @@ related_topics:
   - pied
   - sexual-dysfunction-overview
 relevant_claims: ["pornography-causes-ed"]
+population: "Men reporting hours of visual sexual stimuli viewing"
+method: "Laboratory study of sexual responsiveness"
 last_verified: "2026-10-04"
 ---
 
