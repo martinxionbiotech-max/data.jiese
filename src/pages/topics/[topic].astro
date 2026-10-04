@@ -1,0 +1,131 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { getCollection, render } from 'astro:content';
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { CATEGORY_META } from "../../lib/meta";
+import { DATA_NAV } from "../../lib/nav";
+
+export async function getStaticPaths() {
+  const topics = await getCollection('topics');
+  return topics.map((t) => ({
+    params: { topic: t.data.topic_id },
+    props: { topic: t },
+  }));
+}
+
+const { topic } = Astro.props;
+const { Content } = await render(topic);
+const t = topic.data;
+
+const research = await getCollection('research');
+const relatedResearch = t.related_research
+  .map((id) => research.find((r) => r.data.research_id === id))
+  .filter(Boolean);
+
+const jsonLd: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  name: t.title,
+  description: t.concept,
+  inDefinedTermSet: {
+    "@type": "DefinedTermSet",
+    name: "Porn Recovery Research & Knowledge Library",
+  },
+  url: `${DATA_SITE_URL}/topics/${t.topic_id}/`,
+};
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title={`${t.title} — Knowledge Page`}
+  description={t.concept}
+  canonical={`/topics/${t.topic_id}/`}
+  jsonLd={jsonLd}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: CATEGORY_META[t.category].title, url: `/${t.category}/` },
+    { name: t.title, url: `/topics/${t.topic_id}/` },
+  ]}
+  lastUpdated={t.last_verified}
+  nav={DATA_NAV}
+>
+  <p class="meta">
+    <a class="cat" href={`/${t.category}/`}>{CATEGORY_META[t.category].title}</a>
+  </p>
+  <h1>{t.title}</h1>
+
+  <section>
+    <h2>Concept</h2>
+    <p>{t.concept}</p>
+  </section>
+
+  <Content />
+
+  {t.research_summary && (
+    <section>
+      <h2>What the research shows</h2>
+      <p>{t.research_summary}</p>
+    </section>
+  )}
+
+  {t.community_observation && (
+    <section>
+      <h2>Community observation</h2>
+      <p class="note">{t.community_observation}</p>
+    </section>
+  )}
+
+  {t.practical_implications.length > 0 && (
+    <section>
+      <h2>Practical implications</h2>
+      <ul>
+        {t.practical_implications.map((p) => <li>{p}</li>)}
+      </ul>
+    </section>
+  )}
+
+  <section class="three-col">
+    <div>
+      <h2>What we know</h2>
+      <ul>{t.what_we_know.map((x) => <li>{x}</li>)}</ul>
+    </div>
+    <div>
+      <h2>What we don't know</h2>
+      <ul>{t.what_we_dont_know.map((x) => <li>{x}</li>)}</ul>
+    </div>
+    <div>
+      <h2>What is debated</h2>
+      <ul>{t.what_is_debated.map((x) => <li>{x}</li>)}</ul>
+    </div>
+  </section>
+
+  {relatedResearch.length > 0 && (
+    <section>
+      <h2>Related research</h2>
+      <ul>
+        {relatedResearch.map((r) => (
+          <li><a href={`/research/${r.data.research_id}/`}>{r.data.title}</a></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {t.limitations.length > 0 && (
+    <section>
+      <h2>Limitations</h2>
+      <ul>
+        {t.limitations.map((l) => <li>{l}</li>)}
+      </ul>
+    </section>
+  )}
+
+  <style>
+    .meta { margin-bottom: var(--space-2); }
+    .cat { font-size: 13px; font-weight: 600; color: var(--color-accent); }
+    section { margin-top: var(--space-5); }
+    .three-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--space-4); }
+    .three-col > div { border: 1px solid var(--color-border); border-radius: var(--radius-md);
+      padding: var(--space-3) var(--space-4); }
+  </style>
+</BaseLayout>

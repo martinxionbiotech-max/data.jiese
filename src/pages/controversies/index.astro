@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { DATA_NAV } from "../../lib/nav";
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title="Controversies — What Is Still Debated"
+  description="A summary of the open scientific controversies in problematic pornography use: the behavioural-addiction debate, PIED causality, and withdrawal validity, presented with both sides."
+  canonical="/controversies/"
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "Controversies", url: "/controversies/" }]}
+  nav={DATA_NAV}
+>
+  <h1>Controversies</h1>
+  <p>Several questions about problematic pornography use remain genuinely open. This page
+  presents the main ones, with both sides stated as faithfully as possible. Where the science
+  is unresolved, this site says so rather than picking a side.</p>
+
+  <section class="issue">
+    <h2>1. Is compulsive sexual behaviour an addiction?</h2>
+    <p><strong>The question:</strong> should CSBD / PPU be classified as an addiction?</p>
+    <p><strong>Addiction model:</strong> points to cue reactivity, craving, loss of control, and
+    continued use despite harm as parallels with substance and gambling addiction.</p>
+    <p><strong>Impulse-control / compulsion and skeptical views:</strong> note the role of
+    moral incongruence, the absence of a validated withdrawal syndrome, and methodological
+    weaknesses in the literature. The ICD-11 places CSBD under impulse-control disorders, and
+    the DSM-5 has no comparable diagnosis.</p>
+    <p>See <a href="/topics/behavioral-addiction-debate/">the behavioural addiction debate</a> and
+    <a href="/research/kraus-2016-should-csb-addiction/">Kraus et al. (2016)</a>.</p>
+  </section>
+
+  <section class="issue">
+    <h2>2. Does pornography cause erectile dysfunction?</h2>
+    <p><strong>The question:</strong> does "porn-induced erectile dysfunction" (PIED) exist as a
+    common, causal condition?</p>
+    <p><strong>For:</strong> clinicians report young men with erectile dysfunction attributed to
+    pornography use (<a href="/research/park-2016-pied/">Park et al. 2016</a>).</p>
+    <p><strong>Against / skeptical:</strong> general-population studies find little consistent
+    association (<a href="/research/landripet-2015/">Landripet &amp; Štulhofer 2015</a>), and some
+    reviews find viewing associated with greater responsiveness
+    (<a href="/research/prause-pfaus-2015/">Prause &amp; Pfaus 2015</a>). Causality is not
+    established.</p>
+    <p>See the <a href="/topics/pied/">PIED topic</a>.</p>
+  </section>
+
+  <section class="issue">
+    <h2>3. Is there a real "withdrawal" from pornography?</h2>
+    <p><strong>The question:</strong> does stopping pornography produce a genuine withdrawal
+    syndrome?</p>
+    <p><strong>For:</strong> many people report withdrawal-like experiences, and some instruments
+    include a "withdrawal" component (<a href="/research/bothe-2018-ppcs/">PPCS</a>).</p>
+    <p><strong>Against / skeptical:</strong> no validated physiological withdrawal syndrome has
+    been established, and self-report may reflect habit disruption, mood, and expectation.</p>
+    <p>See the <a href="/topics/withdrawal-definition/">withdrawal topic</a>.</p>
+  </section>
+
+  <section class="issue">
+    <h2>4. Does pornography "damage" or "rewire" the brain?</h2>
+    <p><strong>The question:</strong> does pornography cause permanent or harmful brain changes?</p>
+    <p><strong>Against:</strong> there is no high-quality evidence that pornography permanently
+    damages the brain. Brain-imaging studies report group differences in response to sexual cues,
+    but these are small, correlational, and not evidence of damage.</p>
+    <p>See <a href="/topics/neuroplasticity/">neuroplasticity</a> and
+    <a href="/topics/dopamine/">dopamine</a>.</p>
+  </section>
+
+  <p class="note">This page states what is debated; it does not resolve the debates. The point of
+  this knowledge base is to show what the evidence does and does not support, and to leave the
+  genuinely open questions open.</p>
+</BaseLayout>

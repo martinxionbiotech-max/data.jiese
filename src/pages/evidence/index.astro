@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { TIER_LABELS } from "../../lib/meta";
+import { DATA_NAV } from "../../lib/nav";
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title="Evidence Levels — How We Grade Evidence"
+  description="How this knowledge base grades evidence strength: a four-tier system from clinical guidelines to community observation, and how to judge evidence quality for yourself."
+  canonical="/evidence/"
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "Evidence", url: "/evidence/" }]}
+  nav={DATA_NAV}
+>
+  <h1>Evidence Levels</h1>
+  <p>Every research record on this site is assigned an <strong>evidence tier</strong> (1–4)
+  and an <strong>evidence-strength label</strong> (High / Medium / Low / Uncertain). This page
+  explains what those mean.</p>
+
+  <h2>The four tiers</h2>
+  <table class="data-table">
+    <thead>
+      <tr><th>Tier</th><th>What it is</th><th>Examples</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Tier 1</strong></td>
+        <td>Clinical guidelines and international classifications produced by authoritative bodies.</td>
+        <td>The WHO ICD-11, the APA DSM-5.</td></tr>
+      <tr><td><strong>Tier 2</strong></td>
+        <td>Peer-reviewed studies and reviews published in scientific journals.</td>
+        <td>Systematic reviews, meta-analyses, cross-sectional studies, neuroimaging studies.</td></tr>
+      <tr><td><strong>Tier 3</strong></td>
+        <td>Weaker forms of evidence: clinical reports, case series, and non-peer-reviewed analyses.</td>
+        <td>Clinical reports on PIED, narrative reviews with limited rigor.</td></tr>
+      <tr><td><strong>Tier 4</strong></td>
+        <td>Community observation and personal anecdote.</td>
+        <td>Recovery-community reports, forum accounts.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Evidence-strength labels</h2>
+  <ul>
+    <li><strong>High</strong> — a consensus classification or a large, high-quality synthesis.</li>
+    <li><strong>Medium</strong> — a peer-reviewed study or review with meaningful limitations.</li>
+    <li><strong>Low</strong> — weak, contested, or non-peer-reviewed evidence.</li>
+    <li><strong>Uncertain</strong> — evidence is missing, mixed, or cannot support a conclusion.</li>
+  </ul>
+
+  <h2>How to judge evidence for yourself</h2>
+  <p>When you encounter a claim about pornography use, ask:</p>
+  <ol>
+    <li><strong>What is the source?</strong> A peer-reviewed study, a clinical guideline, a
+    blog post, or a forum comment?</li>
+    <li><strong>Was there a comparison?</strong> Does the evidence compare a group of interest
+    to a control group, or is it only a set of anecdotes?</li>
+    <li><strong>Is causation being claimed?</strong> Many studies are cross-sectional and can
+    only show association, not cause and effect.</li>
+    <li><strong>Who was studied?</strong> Small, self-selected, or treatment-seeking samples
+    may not generalize.</li>
+    <li><strong>Has it been replicated?</strong> A single study — especially a small one — is
+    rarely enough to establish a fact.</li>
+  </ol>
+
+  <p class="note">Tier and strength reflect the kind and quality of evidence, not whether a
+  topic is important. Community experience can be valuable for generating questions and
+  patterns, but it never counts as scientific evidence. See
+  <a href="/controversies/">what remains debated</a>.</p>
+</BaseLayout>

@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { getCollection, render } from 'astro:content';
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { TIER_LABELS, EVIDENCE_LABELS, RESEARCH_TYPE_LABELS } from "../../lib/meta";
+import { DATA_NAV } from "../../lib/nav";
+
+export async function getStaticPaths() {
+  const research = await getCollection('research');
+  return research.map((r) => ({
+    params: { research: r.data.research_id },
+    props: { research: r },
+  }));
+}
+
+const { research } = Astro.props;
+const { Content } = await render(research);
+const r = research.data;
+
+const topics = await getCollection('topics');
+const relatedTopics = r.related_topics
+  .map((id) => topics.find((t) => t.data.topic_id === id))
+  .filter(Boolean);
+
+const jsonLd: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  headline: r.title,
+  datePublished: r.year ? String(r.year) : undefined,
+  ...(r.journal ? { isPartOf: { "@type": "Periodical", name: r.journal } } : {}),
+  ...(r.authors ? { author: r.authors } : {}),
+  url: `${DATA_SITE_URL}/research/${r.research_id}/`,
+  ...(r.source_url ? { sameAs: r.source_url } : {}),
+};
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title={`${r.title} — Research Record`}
+  description={`Research record: ${r.title}. Evidence strength: ${EVIDENCE_LABELS[r.evidence_strength]}, ${TIER_LABELS[r.tier]}.`}
+  canonical={`/research/${r.research_id}/`}
+  jsonLd={jsonLd}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Research", url: "/research/" },
+    { name: r.research_id, url: `/research/${r.research_id}/` },
+  ]}
+  lastUpdated={r.last_verified}
+  nav={DATA_NAV}
+>
+  <p class="meta">
+    <span class={`type-badge type-research`}>RESEARCH EVIDENCE</span>
+    <span class={`type-badge type-${r.evidence_strength === 'high' ? 'research' : r.evidence_strength === 'low' || r.evidence_strength === 'uncertain' ? 'uncertain' : 'research'}`}>
+      {EVIDENCE_LABELS[r.evidence_strength].toUpperCase()} EVIDENCE
+    </span>
+    <span class={`type-badge type-${r.tier >= 3 ? 'uncertain' : 'research'}`}>{TIER_LABELS[r.tier]}</span>
+  </p>
+
+  <h1>{r.title}</h1>
+
+  <dl class="facts">
+    {r.authors && <div><dt>Authors</dt><dd>{r.authors}</dd></div>}
+    {r.year && <div><dt>Year</dt><dd>{r.year}</dd></div>}
+    {r.journal && <div><dt>Journal</dt><dd>{r.journal}</dd></div>}
+    {r.research_type && <div><dt>Type</dt><dd>{RESEARCH_TYPE_LABELS[r.research_type] ?? r.research_type}</dd></div>}
+    {r.source_url && <div><dt>Source</dt><dd><a href={r.source_url} rel="noopener">{r.source_url}</a></dd></div>}
+    <div><dt>Last verified</dt><dd>{r.last_verified}</dd></div>
+  </dl>
+
+  <section>
+    <h2>Main question</h2>
+    <p>{r.main_question ?? "Not recorded."}</p>
+  </section>
+
+  <Content />
+
+  <section>
+    <h2>Findings</h2>
+    <ul>
+      {r.main_findings.map((f) => <li>{f}</li>)}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Limitations</h2>
+    <ul>
+      {r.limitations.map((l) => <li>{l}</li>)}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Clinical relevance</h2>
+    <p>{r.clinical_relevance ?? "Not recorded."}</p>
+  </section>
+
+  <section>
+    <h2>Relevance to problematic pornography use</h2>
+    <p>{r.relevance_to_ppu ?? "Not recorded."}</p>
+  </section>
+
+  <section>
+    <h2>Related topics</h2>
+    {relatedTopics.length > 0 ? (
+      <ul>
+        {relatedTopics.map((t) => (
+          <li><a href={`/topics/${t.data.topic_id}/`}>{t.data.title}</a></li>
+        ))}
+      </ul>
+    ) : <p>None recorded.</p>}
+  </section>
+
+  <style>
+    .meta { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .facts { display: grid; gap: var(--space-2); margin: var(--space-4) 0; }
+    .facts div { display: flex; gap: var(--space-3); }
+    .facts dt { font-weight: 700; min-width: 110px; color: var(--color-primary); }
+    .facts dd { margin: 0; }
+    section { margin-top: var(--space-5); }
+  </style>
+</BaseLayout>

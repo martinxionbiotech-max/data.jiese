@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import TypeBadge from "../../../shared/components/TypeBadge.astro";
+import { getCollection } from 'astro:content';
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { TIER_SHORT, EVIDENCE_LABELS } from "../../lib/meta";
+import { DATA_NAV } from "../../lib/nav";
+
+const research = (await getCollection('research')).sort((a, b) => {
+  const tier = a.data.tier - b.data.tier;
+  if (tier !== 0) return tier;
+  return (b.data.year ?? 0) - (a.data.year ?? 0);
+});
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title="Research Records — Evidence Index"
+  description="An index of research records on problematic pornography use and compulsive sexual behaviour, ordered by evidence tier and year, each with an explicit evidence-strength label."
+  canonical="/research/"
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "Research", url: "/research/" }]}
+  nav={DATA_NAV}
+>
+  <h1>Research Records</h1>
+  <p>These records summarize specific pieces of scientific evidence — studies, reviews, and
+  clinical classifications — that bear on problematic pornography use and compulsive sexual
+  behaviour. Each record carries an explicit <a href="/evidence/">evidence tier and strength label</a>.
+  Records are ordered by tier, then by year.</p>
+
+  <p class="note">These are summaries, not the full text. Where a citation is uncertain, the
+  record marks it <code>verification needed</code> rather than inventing a DOI or PMID.</p>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Record</th><th>Tier</th><th>Strength</th><th>Year</th><th>Type</th></tr>
+    </thead>
+    <tbody>
+      {research.map((r) => (
+        <tr>
+          <td><a href={`/research/${r.data.research_id}/`}>{r.data.title}</a></td>
+          <td>{TIER_SHORT[r.data.tier]}</td>
+          <td>{EVIDENCE_LABELS[r.data.evidence_strength]}</td>
+          <td>{r.data.year ?? "—"}</td>
+          <td>{r.data.research_type ?? "—"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</BaseLayout>

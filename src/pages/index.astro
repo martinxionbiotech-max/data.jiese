@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../../shared/components/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { MAIN_SITE_URL, DATA_SITE_URL } from "../../shared/config/config";
+import { CATEGORY_ORDER, CATEGORY_META } from "../lib/meta";
+import { DATA_NAV } from "../lib/nav";
+
+const topics = await getCollection('topics');
+const research = await getCollection('research');
+
+const siteTitle = "Porn Recovery Research & Knowledge Library";
+
+const org = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteTitle,
+  url: DATA_SITE_URL,
+  description: "A structured knowledge base on what the evidence and accumulated experience actually show about problematic pornography use and compulsive sexual behaviour.",
+};
+
+const statement =
+  "This knowledge base brings together two different kinds of information: what people report experiencing and what scientific research has found. These should not be confused. Personal experiences can reveal patterns and questions, but they do not by themselves establish medical or scientific facts.";
+---
+<BaseLayout
+  siteTitle={siteTitle}
+  siteUrl={DATA_SITE_URL}
+  title="Porn Recovery Research & Knowledge Library"
+  description="A structured knowledge base on what the evidence and accumulated experience actually show about problematic pornography use and compulsive sexual behaviour — clearly separating what is known, what is not known, and what is debated."
+  canonical="/"
+  jsonLd={org}
+  nav={DATA_NAV}
+>
+  <section class="hero">
+    <h1>Porn Recovery Research &amp; Knowledge Library</h1>
+    <p class="lede">A structured knowledge base answering one question:
+    <strong>what does the evidence and accumulated experience actually show?</strong></p>
+    <p class="lede">Where the main site answers <em>"what should I do?"</em>, this site answers
+    <em>"what does the evidence actually show?"</em></p>
+  </section>
+
+  <section class="statement">
+    <h2>How to read this site</h2>
+    <p>{statement}</p>
+  </section>
+
+  <section>
+    <h2>Browse by category</h2>
+    <div class="cards">
+      {CATEGORY_ORDER.map((cat) => (
+        <a class="card" href={`/${cat}/`}>
+          <h3>{CATEGORY_META[cat].title}</h3>
+          <p>{CATEGORY_META[cat].description}</p>
+          <span class="count">{topics.filter((t) => t.data.category === cat).length} topic{(topics.filter((t) => t.data.category === cat).length === 1) ? '' : 's'}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <h2>Research records</h2>
+    <p>{research.length} research records, each with an evidence-strength label and tier.
+    <a href="/research/">Browse the research index</a>.</p>
+    <p>Topics: {topics.length} knowledge pages across {CATEGORY_ORDER.length} categories.
+    <a href="/topics/">Browse all topics</a>.</p>
+  </section>
+
+  <section>
+    <h2>Start with the important questions</h2>
+    <ul>
+      <li><a href="/controversies/">What is still debated?</a> — the behavioural-addiction debate, PIED, and withdrawal.</li>
+      <li><a href="/evidence/">How strong is the evidence?</a> — our tier system explained.</li>
+      <li><a href="/assessment/">Can I self-diagnose?</a> — the limits of self-assessment.</li>
+    </ul>
+  </section>
+
+  <section class="note">
+    <p>This site provides educational information about problematic pornography use and
+    recovery. It is <strong>not</strong> medical advice, diagnosis, or treatment. If you are
+    in crisis or concerned about your mental health, contact a qualified professional.
+    See the <a href="/disclaimer/">full disclaimer</a>. Practical recovery guidance lives on the
+    <a href={MAIN_SITE_URL}>main site</a>.</p>
+  </section>
+
+  <style>
+    .hero { padding: var(--space-6) 0 var(--space-3); }
+    .lede { font-size: 18px; color: var(--color-text-soft); max-width: 700px; }
+    .statement { background: var(--color-bg-alt); border-left: 3px solid var(--color-accent);
+      padding: var(--space-4) var(--space-5); margin: var(--space-4) 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: var(--space-4); margin: var(--space-4) 0; }
+    .card { border: 1px solid var(--color-border); border-radius: var(--radius-md);
+      padding: var(--space-4); display: block; }
+    .card h3 { margin: 0 0 var(--space-2); }
+    .card p { margin: 0 0 var(--space-2); font-size: 14px; color: var(--color-text-soft); }
+    .count { font-size: 12px; color: var(--color-accent); font-weight: 600; }
+  </style>
+</BaseLayout>

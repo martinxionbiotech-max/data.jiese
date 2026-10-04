@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { DATA_SITE_URL, MAIN_SITE_URL } from "../../../shared/config/config";
+import { CATEGORY_META } from "../../lib/meta";
+import { DATA_NAV } from "../../lib/nav";
+
+const topics = (await getCollection('topics'))
+  .filter((t) => t.data.category === 'assessment')
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title="Assessment — Why This Site Has No Self-Diagnosis Tool"
+  description="Why this knowledge base does not offer a self-assessment or self-diagnosis tool, and the scientific limits of self-assessment for problematic pornography use."
+  canonical="/assessment/"
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "Assessment", url: "/assessment/" }]}
+  nav={DATA_NAV}
+>
+  <h1>Assessment</h1>
+  <p class="lede">{CATEGORY_META.assessment.description}</p>
+
+  <h2>Why there is no self-diagnosis tool here</h2>
+  <p>This knowledge base deliberately does <strong>not</strong> provide a self-test, quiz, or
+  score-based "are you addicted?" tool. There are several reasons:</p>
+  <ul>
+    <li><strong>Self-report is not diagnosis.</strong> Validated clinical tools — such as
+    structured clinical interviews — are designed to be administered and interpreted by
+    trained professionals. A self-administered checklist cannot replicate this.</li>
+    <li><strong>Self-perception is biased.</strong> Research shows that whether a person
+    labels themselves "addicted" is strongly influenced by
+    <a href="/research/grubbs-2019-moral-incongruence/">moral incongruence</a> — the gap
+    between their values and their behaviour — and is only modestly related to how much
+    pornography they actually use.</li>
+    <li><strong>No single score captures distress and impairment.</strong> Whether behaviour
+    is a clinical problem depends on distress and life impairment, which a fixed score
+    cannot reliably measure.</li>
+  </ul>
+
+  <h2>What validated tools actually do</h2>
+  <p>Research instruments such as the <a href="/research/bothe-2018-ppcs/">PPCS</a> measure
+  problematic pornography use in research settings. They are useful for population-level
+  study, but they are <em>not</em> diagnostic tools for individuals.</p>
+
+  <h2>What to do if you are concerned</h2>
+  <p>If pornography use is causing you significant distress, interfering with your life, or
+  co-occurring with low mood or anxiety, the appropriate step is to speak with a qualified
+  professional. See <a href="/topics/seeking-professional-help/">when and how to seek
+  professional help</a>.</p>
+
+  {topics.length > 0 && (
+    <section>
+      <h2>Related knowledge pages</h2>
+      <ul>
+        {topics.map((t) => (
+          <li><a href={`/topics/${t.data.topic_id}/`}>{t.data.title}</a></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <p class="note">This site is educational. It is not a medical site, not a diagnosis tool,
+  and not a treatment program. See the <a href="/disclaimer/">full disclaimer</a> and the
+  <a href={MAIN_SITE_URL}>main site</a> for practical recovery guidance.</p>
+</BaseLayout>

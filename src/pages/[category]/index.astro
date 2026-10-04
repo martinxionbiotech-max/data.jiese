@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { CATEGORY_META, type CategoryKey } from "../../lib/meta";
+import { DATA_NAV } from "../../lib/nav";
+
+// Categories handled by this dynamic route. 'assessment' has its own explanatory page.
+const CATEGORIES: CategoryKey[] = [
+  'definitions', 'psychology', 'neuroscience', 'psychiatry',
+  'behavior', 'sexual-health', 'treatment',
+];
+
+export async function getStaticPaths() {
+  return ['definitions', 'psychology', 'neuroscience', 'psychiatry',
+    'behavior', 'sexual-health', 'treatment'
+  ].map((cat) => ({ params: { category: cat } }));
+}
+
+const { category } = Astro.params;
+const meta = CATEGORY_META[category as CategoryKey];
+const topics = (await getCollection('topics'))
+  .filter((t) => t.data.category === category)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title={`${meta.title} — Knowledge Pages`}
+  description={meta.description}
+  canonical={`/${category}/`}
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: meta.title, url: `/${category}/` }]}
+  nav={DATA_NAV}
+>
+  <h1>{meta.title}</h1>
+  <p class="lede">{meta.description}</p>
+
+  {topics.map((t) => (
+    <article class="entry">
+      <h2><a href={`/topics/${t.data.topic_id}/`}>{t.data.title}</a></h2>
+      <p>{t.data.concept}</p>
+    </article>
+  ))}
+</BaseLayout>

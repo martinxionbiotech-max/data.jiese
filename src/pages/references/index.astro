@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { DATA_NAV } from "../../lib/nav";
+
+const research = (await getCollection('research')).sort((a, b) => {
+  const au = (a.data.authors ?? '').localeCompare(b.data.authors ?? '');
+  if (au !== 0) return au;
+  return (a.data.year ?? 0) - (b.data.year ?? 0);
+});
+
+function apa(r: (typeof research)[number]['data']): string {
+  const authors = r.authors ? `${r.authors} ` : '';
+  const year = r.year ? `(${r.year}). ` : '';
+  const title = `${r.title}. `;
+  const journal = r.journal ? `${r.journal}.` : '';
+  return `${authors}${year}${title}${journal}`.trim();
+}
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title="References — Full Reference List"
+  description="A full list of all research records referenced on this knowledge base, in APA-style citation format."
+  canonical="/references/"
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "References", url: "/references/" }]}
+  nav={DATA_NAV}
+>
+  <h1>References</h1>
+  <p>All research records referenced across this knowledge base, in approximate APA style.
+  Citations marked <code>verification needed</code> on their record page have not had their
+  DOI/PMID confirmed; verify them before relying on the exact bibliographic details.</p>
+
+  <ol class="refs">
+    {research.map((r) => (
+      <li id={r.data.research_id}>
+        {apa(r.data)}
+        {' '}<a href={`/research/${r.data.research_id}/`}>record</a>
+        {r.data.source_url && <> · <a href={r.data.source_url} rel="noopener">source</a></>}
+      </li>
+    ))}
+  </ol>
+
+  <style>
+    .refs li { margin-bottom: var(--space-3); }
+    .refs { padding-left: var(--space-6); }
+  </style>
+</BaseLayout>

@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { CATEGORY_ORDER, CATEGORY_META } from "../../lib/meta";
+import { DATA_NAV } from "../../lib/nav";
+
+const topics = await getCollection('topics');
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title="All Topics — Knowledge Index"
+  description="An index of all knowledge pages on the Porn Recovery Research & Knowledge Library, organized by category."
+  canonical="/topics/"
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "Topics", url: "/topics/" }]}
+  nav={DATA_NAV}
+>
+  <h1>All Topics</h1>
+  <p>{topics.length} knowledge pages across {CATEGORY_ORDER.length} categories.</p>
+
+  {CATEGORY_ORDER.map((cat) => {
+    const items = topics.filter((t) => t.data.category === cat);
+    if (items.length === 0) return null;
+    return (
+      <section>
+        <h2><a href={`/${cat}/`}>{CATEGORY_META[cat].title}</a></h2>
+        <ul>
+          {items.sort((a, b) => a.data.title.localeCompare(b.data.title)).map((t) => (
+            <li><a href={`/topics/${t.data.topic_id}/`}>{t.data.title}</a></li>
+          ))}
+        </ul>
+      </section>
+    );
+  })}
+</BaseLayout>

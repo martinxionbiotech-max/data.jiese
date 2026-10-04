@@ -1,0 +1,97 @@
+// Shared metadata for the data.jiese knowledge base.
+// Category ordering + display metadata, evidence/tier labels.
+
+export type CategoryKey =
+  | 'psychology'
+  | 'neuroscience'
+  | 'psychiatry'
+  | 'behavior'
+  | 'sexual-health'
+  | 'treatment'
+  | 'assessment'
+  | 'definitions';
+
+export const CATEGORY_ORDER: CategoryKey[] = [
+  'definitions',
+  'psychology',
+  'neuroscience',
+  'psychiatry',
+  'behavior',
+  'sexual-health',
+  'treatment',
+  'assessment',
+];
+
+export const CATEGORY_META: Record<CategoryKey, { title: string; description: string }> = {
+  'definitions': {
+    title: 'Definitions',
+    description:
+      'Core terms and their clinical status. Includes terms used by communities (e.g. "flatline") that have no formal clinical definition.',
+  },
+  psychology: {
+    title: 'Psychology',
+    description:
+      'Psychological concepts relevant to problematic pornography use: habit, craving, cue reactivity, emotion regulation, and relapse.',
+  },
+  neuroscience: {
+    title: 'Neuroscience',
+    description:
+      'What brain-imaging and neuroscience research has — and has not — established about reward, dopamine, and cue reactivity.',
+  },
+  psychiatry: {
+    title: 'Psychiatry',
+    description:
+      'Diagnostic classification: CSBD in the ICD-11, the behavioural-addiction debate, and impulse-control disorders.',
+  },
+  behavior: {
+    title: 'Behavior',
+    description:
+      'Behaviour-level concepts: compulsive sexual behaviour, problematic pornography use, and the urge-versus-craving distinction.',
+  },
+  'sexual-health': {
+    title: 'Sexual Health',
+    description:
+      'Sexual-health topics such as erectile dysfunction. Evidence is presented honestly, including where causality is not established.',
+  },
+  treatment: {
+    title: 'Treatment',
+    description:
+      'What is known about treatment approaches, and when and how to seek professional help. No treatment promises.',
+  },
+  assessment: {
+    title: 'Assessment',
+    description:
+      'The scientific limits of self-assessment and screening tools, and why this site does not offer a self-diagnosis tool.',
+  },
+};
+
+export const EVIDENCE_LABELS: Record<string, string> = {
+  high: 'High',
+  medium: 'Medium',
+  low: 'Low',
+  uncertain: 'Uncertain',
+};
+
+export const TIER_LABELS: Record<number, string> = {
+  1: 'Tier 1 — Clinical guideline / international classification',
+  2: 'Tier 2 — Peer-reviewed study / review',
+  3: 'Tier 3 — Clinical reports / weaker evidence',
+  4: 'Tier 4 — Community observation / anecdote',
+};
+
+export const TIER_SHORT: Record<number, string> = {
+  1: 'Tier 1',
+  2: 'Tier 2',
+  3: 'Tier 3',
+  4: 'Tier 4',
+};
+
+export const RESEARCH_TYPE_LABELS: Record<string, string> = {
+  'systematic-review': 'Systematic review / meta-analysis',
+  'cross-sectional': 'Cross-sectional study',
+  'clinical-guideline': 'Clinical guideline / classification',
+  conceptual: 'Conceptual / review paper',
+  'cohort': 'Cohort / longitudinal study',
+  'qualitative': 'Qualitative study',
+  'other': 'Other',
+};

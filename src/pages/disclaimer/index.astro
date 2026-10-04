@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../../../shared/components/BaseLayout.astro";
+import { DATA_SITE_URL } from "../../../shared/config/config";
+import { DATA_NAV } from "../../lib/nav";
+---
+<BaseLayout
+  siteTitle="Porn Recovery Research & Knowledge Library"
+  siteUrl={DATA_SITE_URL}
+  title="Health & Medical Disclaimer"
+  description="This knowledge base provides educational information about problematic pornography use and compulsive sexual behaviour. It is not medical advice, diagnosis, or treatment."
+  canonical="/disclaimer/"
+  breadcrumbs={[{ name: "Home", url: "/" }, { name: "Disclaimer", url: "/disclaimer/" }]}
+  nav={DATA_NAV}
+>
+  <h1>Health &amp; Medical Disclaimer</h1>
+  <p>This knowledge base provides general educational information about problematic pornography
+  use (PPU), compulsive sexual behaviour, and related research. By using this site, you
+  acknowledge the following:</p>
+  <ul>
+    <li><strong>Not medical advice.</strong> Nothing on this site is medical advice, diagnosis,
+    treatment, or a substitute for consultation with a qualified healthcare professional.</li>
+    <li><strong>No diagnosis.</strong> This site does not diagnose any condition and does not
+    provide self-diagnosis tools. See <a href="/assessment/">why</a>.</li>
+    <li><strong>Not individualized.</strong> Content is general information. It does not take
+    into account your personal circumstances, health history, or situation.</li>
+    <li><strong>Experiences are not evidence.</strong> Community observations describe what some
+    people report. They do not establish medical or scientific facts.</li>
+    <li><strong>Evidence is summarized, not complete.</strong> Research summaries reflect sources
+    available at the time of writing and may be superseded. Some citations require verification.</li>
+    <li><strong>Seek professional help when needed.</strong> If you experience significant
+    distress, depression, anxiety, or thoughts of self-harm, contact a qualified professional
+    or local emergency services.</li>
+  </ul>
+  <p class="note">If you are in crisis, please contact a local crisis line or emergency services
+  in your country.</p>
+</BaseLayout>
