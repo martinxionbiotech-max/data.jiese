@@ -14,9 +14,21 @@ const claims = await getCollection('claims');
 const c = claims.find((x) => x.data.claim_id === claim);
 const { Content } = await render(c);
 
+
+
 const statusLabel: Record<string, string> = {
   supported: 'Supported', 'partially-supported': 'Partially Supported', mixed: 'Mixed Evidence',
   limited: 'Limited Evidence', 'not-established': 'Not Established', contradicted: 'Contradicted', unknown: 'Unknown',
+};
+
+const claimJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ClaimReview",
+  claimReviewed: c.data.claim,
+  reviewRating: { "@type": "Rating", ratingValue: statusLabel[c.data.status], bestRating: "Supported" },
+  author: { "@type": "Organization", name: "SelfControlAtlas", url: DATA_SITE_URL },
+  url: `${DATA_SITE_URL}/claims/${c.data.claim_id}/`,
+  dateModified: "2026-10-05",
 };
 ---
 <BaseLayout
@@ -26,6 +38,7 @@ const statusLabel: Record<string, string> = {
   description={`Evidence assessment of the claim: ${c.data.claim} Status: ${statusLabel[c.data.status]}.`}
   canonical={`/claims/${c.data.claim_id}/`}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "Claims", url: "/claims/" }, { name: c.data.title, url: `/claims/${c.data.claim_id}/` }]}
+  jsonLd={claimJsonLd}
 >
   <h1>{c.data.claim}</h1>
   <TypeBadge type="research" />
