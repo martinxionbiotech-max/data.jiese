@@ -17,6 +17,16 @@ function apa(r: (typeof research)[number]['data']): string {
   const journal = r.journal ? `${r.journal}.` : '';
   return `${authors}${year}${title}${journal}`.trim();
 }
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "References",
+  url: DATA_SITE_URL + "/references/",
+  description: "A full list of all research records referenced on this knowledge base, in APA-style citation format.",
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
   siteTitle="Porn Recovery Research & Knowledge Library"
@@ -24,6 +34,7 @@ function apa(r: (typeof research)[number]['data']): string {
   title="References — Full Reference List"
   description="A full list of all research records referenced on this knowledge base, in APA-style citation format."
   canonical="/references/"
+  jsonLd={jsonLd}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "References", url: "/references/" }]}
   nav={DATA_NAV}
 >

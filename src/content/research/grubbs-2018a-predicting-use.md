@@ -6,6 +6,7 @@ source_type: "cohort-study"
 title: "Predicting pornography use over time: Does self-reported 'addiction' matter?"
 authors: "Grubbs, J. B., Wilt, J. A., Exline, J. J., & Pargament, K. I."
 year: 2018
+doi: "10.31234/osf.io/n96rw"
 journal: "Addictive Behaviors"
 research_type: "longitudinal"
 main_question: "Does self-perceived addiction predict later pornography use?"

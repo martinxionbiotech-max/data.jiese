@@ -5,6 +5,7 @@ source_type: "systematic-review"
 title: "Problematic porn use and cross-cultural differences: A brief review"
 authors: "Ahorsu, D. K., Adjorlolo, S., Nurmala, I., Ruckwongpatr, K., Strong, C., & Lin, C. Y."
 year: 2023
+doi: "10.1007/s40429-023-00505-3"
 journal: "Current Addiction Reports"
 research_type: "review"
 main_question: "How does PPU vary across cultures and countries?"

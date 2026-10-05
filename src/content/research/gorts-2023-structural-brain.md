@@ -5,6 +5,7 @@ source_type: "neuroimaging"
 title: "Structural brain differences related to compulsive sexual behavior disorder"
 authors: "Görts, P., Savard, J., Görts-Öberg, K., Dhejne, C., Arver, S., Jokinen, J., et al."
 year: 2023
+doi: "10.1556/2006.2023.00008"
 journal: "Journal of Behavioral Addictions"
 research_type: "cross-sectional"
 main_question: "Are there structural brain differences in CSBD?"

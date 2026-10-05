@@ -6,6 +6,7 @@ source_type: "systematic-review"
 title: "Treatments and interventions for compulsive sexual behavior disorder with a focus on problematic pornography use: A preregistered systematic review"
 authors: "Antons, S., Engel, J., Briken, P., Krüger, T. H. C., Brand, M., & Stark, R."
 year: 2022
+doi: "10.1556/2006.2022.00061"
 journal: "Journal of Behavioral Addictions"
 research_type: "systematic-review"
 main_question: "What treatments and interventions exist for CSBD with a focus on PPU, and how well are they supported?"

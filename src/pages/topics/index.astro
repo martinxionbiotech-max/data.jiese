@@ -6,6 +6,16 @@ import { CATEGORY_ORDER, CATEGORY_META } from "../../lib/meta";
 import { DATA_NAV } from "../../lib/nav";
 
 const topics = await getCollection('topics');
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "All Topics",
+  url: DATA_SITE_URL + "/topics/",
+  description: "An index of all knowledge pages on the Porn Recovery Research & Knowledge Library, organized by category.",
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
   siteTitle="Porn Recovery Research & Knowledge Library"
@@ -13,6 +23,7 @@ const topics = await getCollection('topics');
   title="All Topics — Knowledge Index"
   description="An index of all knowledge pages on the Porn Recovery Research & Knowledge Library, organized by category."
   canonical="/topics/"
+  jsonLd={jsonLd}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "Topics", url: "/topics/" }]}
   nav={DATA_NAV}
 >

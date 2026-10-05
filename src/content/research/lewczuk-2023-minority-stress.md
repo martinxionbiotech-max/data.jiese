@@ -7,6 +7,7 @@ pmid: "37676791"
 title: "CSBD and PPU in cisgender sexual minority individuals: Associations with minority stress, social support, and sexualized drug use"
 authors: "Lewczuk, K., Wizła, M., Glica, A., & Dwulit, A. D."
 year: 2023
+doi: "10.1080/00224499.2023.2245399"
 journal: "The Journal of Sex Research"
 research_type: "cross-sectional"
 main_question: "How do minority stress and social support relate to CSBD/PPU in sexual minority individuals?"

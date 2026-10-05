@@ -8,6 +8,16 @@ import { DATA_NAV } from "../../lib/nav";
 const topics = (await getCollection('topics'))
   .filter((t) => t.data.category === 'assessment')
   .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Assessment",
+  url: DATA_SITE_URL + "/assessment/",
+  description: "Why this knowledge base does not offer a self-assessment or self-diagnosis tool, and the scientific limits of self-assessment for problematic pornography use.",
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
   siteTitle="Porn Recovery Research & Knowledge Library"
@@ -15,6 +25,7 @@ const topics = (await getCollection('topics'))
   title="Assessment — Why This Site Has No Self-Diagnosis Tool"
   description="Why this knowledge base does not offer a self-assessment or self-diagnosis tool, and the scientific limits of self-assessment for problematic pornography use."
   canonical="/assessment/"
+  jsonLd={jsonLd}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "Assessment", url: "/assessment/" }]}
   nav={DATA_NAV}
 >

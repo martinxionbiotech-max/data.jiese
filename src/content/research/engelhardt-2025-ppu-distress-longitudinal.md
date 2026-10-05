@@ -5,6 +5,7 @@ source_type: "cohort-study"
 title: "Problematic pornography use and psychological distress: A longitudinal study in a large US sample"
 authors: "Engelhardt, R., Geppert, R., Grubbs, J. B., von Oertzen, T., Trommer, D., Maes, J., & Kraus, S. W."
 year: 2025
+doi: "10.1016/j.addbeh.2025.108398"
 journal: "Addictive Behaviors"
 research_type: "longitudinal"
 main_question: "Does PPU predict later psychological distress, or does distress predict later PPU?"

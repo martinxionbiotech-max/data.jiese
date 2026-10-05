@@ -3,6 +3,16 @@ import BaseLayout from "../../../shared/components/BaseLayout.astro";
 import { getCollection } from 'astro:content';
 import { DATA_SITE_URL, MAIN_SITE_URL } from "../../../shared/config/config";
 const controversies = await getCollection('controversies');
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Evidence & Controversies",
+  url: DATA_SITE_URL + "/controversies/",
+  description: "Structured overviews of active scientific debates about pornography use, compulsive sexual behavior, and recovery — positions, evidence, limitations, and what remains uncertain.",
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
   siteTitle="Porn Recovery Research & Knowledge Library"
@@ -10,6 +20,7 @@ const controversies = await getCollection('controversies');
   title="Evidence & Controversies"
   description="Structured overviews of active scientific debates about pornography use, compulsive sexual behavior, and recovery — positions, evidence, limitations, and what remains uncertain."
   canonical="/controversies/"
+  jsonLd={jsonLd}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "Controversies", url: "/controversies/" }]}
 >
   <h1>Evidence &amp; Controversies</h1>

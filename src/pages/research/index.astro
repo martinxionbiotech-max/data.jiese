@@ -11,6 +11,16 @@ const research = (await getCollection('research')).sort((a, b) => {
   if (tier !== 0) return tier;
   return (b.data.year ?? 0) - (a.data.year ?? 0);
 });
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Research Records",
+  url: DATA_SITE_URL + "/research/",
+  description: "An index of research records on problematic pornography use and compulsive sexual behaviour, ordered by evidence tier and year, each with an explicit evidence-strength label.",
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
   siteTitle="Porn Recovery Research & Knowledge Library"
@@ -19,6 +29,7 @@ const research = (await getCollection('research')).sort((a, b) => {
   description="An index of research records on problematic pornography use and compulsive sexual behaviour, ordered by evidence tier and year, each with an explicit evidence-strength label."
   canonical="/research/"
   ogImage={DATA_SITE_URL + "/images/hero-research.webp"}
+  jsonLd={jsonLd}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "Research", url: "/research/" }]}
   nav={DATA_NAV}
 >

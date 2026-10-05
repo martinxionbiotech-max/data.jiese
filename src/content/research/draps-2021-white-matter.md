@@ -5,6 +5,7 @@ source_type: "neuroimaging"
 title: "White matter microstructural and Compulsive Sexual Behaviors Disorder — Diffusion Tensor Imaging study"
 authors: "Draps, M., Kowalczyk-Grębska, N., Marchewka, A., Shi, F., & Gola, M."
 year: 2021
+doi: "10.1556/2006.2021.00002"
 journal: "Journal of Behavioral Addictions"
 research_type: "cross-sectional"
 main_question: "Do white matter microstructural differences characterize CSBD?"

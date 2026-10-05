@@ -10,6 +10,16 @@ const statusLabel: Record<string, string> = {
   supported: 'Supported', 'partially-supported': 'Partially Supported', mixed: 'Mixed Evidence',
   limited: 'Limited Evidence', 'not-established': 'Not Established', contradicted: 'Contradicted', unknown: 'Unknown',
 };
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Claims Database",
+  url: DATA_SITE_URL + "/claims/",
+  description: "A structured database of common claims about pornography use and recovery, each evaluated against current evidence with explicit status, strength, and uncertainty.",
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
   siteTitle="Porn Recovery Research & Knowledge Library"
@@ -17,6 +27,7 @@ const statusLabel: Record<string, string> = {
   title="Claims Database — Statements Evaluated Against Evidence"
   description="A structured database of common claims about pornography use and recovery, each evaluated against current evidence with explicit status, strength, and uncertainty."
   canonical="/claims/"
+  jsonLd={jsonLd}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "Claims", url: "/claims/" }]}
 >
   <h1>Claims Database</h1>

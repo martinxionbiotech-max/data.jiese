@@ -6,6 +6,7 @@ source_type: "clinical-study"
 title: "Predictors of compulsive sexual behavior among treatment-seeking women"
 authors: "Kowalewska, E., Gola, M., Lew-Starowicz, M., & Kraus, S. W."
 year: 2022
+doi: "10.1016/j.esxm.2022.100525"
 journal: "Sexual Medicine"
 research_type: "cross-sectional"
 main_question: "What predicts CSB among women seeking treatment?"

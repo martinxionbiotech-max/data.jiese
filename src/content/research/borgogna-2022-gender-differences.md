@@ -6,6 +6,7 @@ source_type: "cross-sectional"
 title: "Understanding differences in problematic pornography use: Considerations for gender and sexual orientation"
 authors: "Borgogna, N. C., Griffin, K. R., Grubbs, J. B., & Kraus, S. W."
 year: 2022
+doi: "10.1016/j.jsxm.2022.05.144"
 journal: "The Journal of Sexual Medicine"
 research_type: "cross-sectional"
 main_question: "How does PPU differ by gender and sexual orientation?"

@@ -5,6 +5,7 @@ source_type: "cross-sectional"
 title: "Frequency of pornography use and sexual health outcomes in Sweden: Analysis of a national probability survey"
 authors: "Malki, K., Rahm, C., Öberg, K. G., & Ueda, P."
 year: 2021
+doi: "10.1016/j.jsxm.2021.08.003"
 journal: "The Journal of Sexual Medicine"
 research_type: "cross-sectional"
 main_question: "How does pornography use frequency relate to sexual health outcomes in a national probability sample?"

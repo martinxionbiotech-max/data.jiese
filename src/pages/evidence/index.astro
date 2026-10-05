@@ -3,6 +3,16 @@ import BaseLayout from "../../../shared/components/BaseLayout.astro";
 import { DATA_SITE_URL } from "../../../shared/config/config";
 import { TIER_LABELS } from "../../lib/meta";
 import { DATA_NAV } from "../../lib/nav";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Evidence Levels",
+  url: DATA_SITE_URL + "/evidence/",
+  description: "How this knowledge base grades evidence strength: a four-tier system from clinical guidelines to community observation, and how to judge evidence quality for yourself.",
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
   siteTitle="Porn Recovery Research & Knowledge Library"
@@ -10,6 +20,7 @@ import { DATA_NAV } from "../../lib/nav";
   title="Evidence Levels — How We Grade Evidence"
   description="How this knowledge base grades evidence strength: a four-tier system from clinical guidelines to community observation, and how to judge evidence quality for yourself."
   canonical="/evidence/"
+  jsonLd={jsonLd}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "Evidence", url: "/evidence/" }]}
   nav={DATA_NAV}
 >

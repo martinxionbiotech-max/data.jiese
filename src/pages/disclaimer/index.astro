@@ -2,6 +2,16 @@
 import BaseLayout from "../../../shared/components/BaseLayout.astro";
 import { DATA_SITE_URL } from "../../../shared/config/config";
 import { DATA_NAV } from "../../lib/nav";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Health & Medical Disclaimer",
+  url: DATA_SITE_URL + "/disclaimer/",
+  description: "This knowledge base provides educational information about problematic pornography use and compulsive sexual behaviour. It is not medical advice, diagnosis, or treatment.",
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
   siteTitle="Porn Recovery Research & Knowledge Library"
@@ -9,6 +19,7 @@ import { DATA_NAV } from "../../lib/nav";
   title="Health & Medical Disclaimer"
   description="This knowledge base provides educational information about problematic pornography use and compulsive sexual behaviour. It is not medical advice, diagnosis, or treatment."
   canonical="/disclaimer/"
+  jsonLd={jsonLd}
   breadcrumbs={[{ name: "Home", url: "/" }, { name: "Disclaimer", url: "/disclaimer/" }]}
   nav={DATA_NAV}
 >

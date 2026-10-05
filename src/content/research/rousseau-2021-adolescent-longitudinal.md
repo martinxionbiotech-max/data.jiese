@@ -5,6 +5,7 @@ source_type: "cohort-study"
 title: "Theoretical antecedents of male adolescents' problematic pornography use: A longitudinal assessment"
 authors: "Rousseau, A., Bőthe, B., & Štulhofer, A."
 year: 2021
+doi: "10.1080/00224499.2020.1815637"
 journal: "The Journal of Sex Research"
 research_type: "longitudinal"
 main_question: "What predicts the development of PPU in male adolescents over time?"

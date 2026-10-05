@@ -13,8 +13,20 @@ const { controversy } = Astro.params;
 const cs = await getCollection('controversies');
 const c = cs.find((x) => x.data.controversy_id === controversy);
 const { Content } = await render(c);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  name: `${c.data.question} — Evidence & Controversy`,
+  url: DATA_SITE_URL + `/controversies/${c.data.controversy_id}/`,
+  description: c.data.why_controversial,
+  author: { "@type": "Organization", name: "SelfControlAtlas Tech Team" },
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
+  jsonLd={jsonLd}
   siteTitle="Porn Recovery Research & Knowledge Library"
   siteUrl={DATA_SITE_URL}
   title={`${c.data.question} — Evidence & Controversy`}

@@ -6,6 +6,7 @@ source_type: "cross-sectional"
 title: "Moral incongruence and addiction: A registered report"
 authors: "Grubbs, J. B., Floyd, C. G., Griffin, K. R., Jennings, T. L., & Kraus, S. W."
 year: 2022
+doi: "10.1037/adb0000876"
 journal: "Psychology of Addictive Behaviors"
 research_type: "cross-sectional"
 main_question: "Does moral incongruence predict self-perceived pornography addiction independently of use?"

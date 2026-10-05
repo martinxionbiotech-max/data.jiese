@@ -5,6 +5,7 @@ source_type: "cohort-study"
 title: "Is pornography use related to erectile functioning? Results from cross-sectional and latent growth curve analyses"
 authors: "Grubbs, J. B., & Gola, M."
 year: 2019
+doi: "10.1016/j.jsxm.2018.11.004"
 journal: "The Journal of Sexual Medicine"
 research_type: "longitudinal"
 main_question: "Is pornography use — or self-perceived problematic use — related to erectile functioning over time?"

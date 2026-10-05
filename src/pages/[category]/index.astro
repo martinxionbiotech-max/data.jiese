@@ -22,8 +22,19 @@ const meta = CATEGORY_META[category as CategoryKey];
 const topics = (await getCollection('topics'))
   .filter((t) => t.data.category === category)
   .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: `${meta.title} — Knowledge Pages`,
+  url: DATA_SITE_URL + `/${category}/`,
+  description: meta.description,
+  isPartOf: { "@type": "WebSite", "name": "Porn Recovery Research & Knowledge Library", "url": "https://data.selfcontrolatlas.com" },
+};
+
 ---
 <BaseLayout
+  jsonLd={jsonLd}
   siteTitle="Porn Recovery Research & Knowledge Library"
   siteUrl={DATA_SITE_URL}
   title={`${meta.title} — Knowledge Pages`}
