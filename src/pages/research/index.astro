@@ -3,7 +3,7 @@ import BaseLayout from "../../../shared/components/BaseLayout.astro";
 import TypeBadge from "../../../shared/components/TypeBadge.astro";
 import { getCollection } from 'astro:content';
 import { DATA_SITE_URL } from "../../../shared/config/config";
-import { TIER_SHORT, EVIDENCE_LABELS } from "../../lib/meta";
+import { TIER_SHORT, EVIDENCE_LABELS, SOURCE_TYPE_LABELS } from "../../lib/meta";
 import { DATA_NAV } from "../../lib/nav";
 
 const research = (await getCollection('research')).sort((a, b) => {
@@ -33,7 +33,7 @@ const research = (await getCollection('research')).sort((a, b) => {
 
   <table class="data-table">
     <thead>
-      <tr><th>Record</th><th>Tier</th><th>Strength</th><th>Year</th><th>Type</th></tr>
+      <tr><th>Record</th><th>Tier</th><th>Strength</th><th>Source type</th><th>Year</th><th>Last verified</th></tr>
     </thead>
     <tbody>
       {research.map((r) => (
@@ -41,8 +41,9 @@ const research = (await getCollection('research')).sort((a, b) => {
           <td><a href={`/research/${r.data.research_id}/`}>{r.data.title}</a></td>
           <td>{TIER_SHORT[r.data.tier]}</td>
           <td>{EVIDENCE_LABELS[r.data.evidence_strength]}</td>
+          <td>{r.data.source_type ? (SOURCE_TYPE_LABELS[r.data.source_type] ?? r.data.source_type) : "—"}</td>
           <td>{r.data.year ?? "—"}</td>
-          <td>{r.data.research_type ?? "—"}</td>
+          <td>{r.data.last_verified}</td>
         </tr>
       ))}
     </tbody>

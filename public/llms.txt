@@ -6,7 +6,7 @@ controversies. Educational information; not medical advice.
 
 ## Core sections
 
-- Research: https://data.selfcontrolatlas.com/research/ — 20 study summaries (DOI/PMID where verified)
+- Research: https://data.selfcontrolatlas.com/research/ — 51 study summaries (DOI/PMID where verified)
 - Topics: https://data.selfcontrolatlas.com/topics/ — 30 concept pages
 - Claims: https://data.selfcontrolatlas.com/claims/ — 11 common claims rated against evidence
 - Controversies: https://data.selfcontrolatlas.com/controversies/ — 4 structured scientific debates

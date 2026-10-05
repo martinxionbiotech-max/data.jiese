@@ -75,7 +75,7 @@ export const EVIDENCE_LABELS: Record<string, string> = {
 };
 // Phase 2 (Part 9): SOURCE TYPE — separate from evidence strength
 export const SOURCE_TYPE_LABELS: Record<string, string> = {
-  'clinical-guideline': 'Clinical guideline',
+
   'diagnostic-classification': 'Diagnostic classification',
   'systematic-review': 'Systematic review',
   'meta-analysis': 'Meta-analysis',
@@ -107,7 +107,7 @@ export const TIER_SHORT: Record<number, string> = {
 export const RESEARCH_TYPE_LABELS: Record<string, string> = {
   'systematic-review': 'Systematic review / meta-analysis',
   'cross-sectional': 'Cross-sectional study',
-  'clinical-guideline': 'Clinical guideline / classification',
+  'diagnostic-classification': 'Diagnostic classification',
   conceptual: 'Conceptual / review paper',
   'cohort': 'Cohort / longitudinal study',
   'qualitative': 'Qualitative study',

@@ -7,6 +7,11 @@ import { DATA_NAV } from "../lib/nav";
 
 const topics = await getCollection('topics');
 const research = await getCollection('research');
+const currentEvidence = {
+  latest: research.filter((r) => r.data.year === 2025).length,
+  recent: research.filter((r) => r.data.year && r.data.year >= 2024).length,
+  lastThree: research.filter((r) => r.data.year && r.data.year >= 2023).length,
+};
 
 const siteTitle = "Porn Recovery Research & Knowledge Library";
 
@@ -62,6 +67,16 @@ const statement =
     <h2>Research records</h2>
     <p>{research.length} research records, each with an evidence-strength label and tier.
     <a href="/research/">Browse the research index</a>.</p>
+  <section class="current-evidence">
+    <h2>Current Evidence</h2>
+    <ul>
+      <li><strong>2025</strong>: {currentEvidence.latest} record{currentEvidence.latest === 1 ? "" : "s"}</li>
+      <li><strong>2024–2025</strong>: {currentEvidence.recent} records</li>
+      <li><strong>2023–2025</strong>: {currentEvidence.lastThree} records</li>
+    </ul>
+    <p>The newest research is indexed first on the <a href="/research/">research index</a>.</p>
+  </section>
+
     <p>Topics: {topics.length} knowledge pages across {CATEGORY_ORDER.length} categories.
     <a href="/topics/">Browse all topics</a>.</p>
   </section>

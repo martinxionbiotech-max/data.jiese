@@ -26,7 +26,7 @@ const research = defineCollection({
     related_topics: z.array(z.string()).default([]),
     source_url: z.string().optional(),
     // Phase 2 (Part 9/10)
-    source_type: z.enum(['clinical-guideline','diagnostic-classification','systematic-review','meta-analysis','rct','cohort-study','cross-sectional','neuroimaging','clinical-study','qualitative','case-report','expert-commentary','community-report']).optional(),
+    source_type: z.enum(['diagnostic-classification','systematic-review','meta-analysis','rct','cohort-study','cross-sectional','neuroimaging','clinical-study','qualitative','case-report','expert-commentary','community-report']).optional(),
     evidence_strength: z.enum(['strong','moderate','limited','mixed','uncertain']).default('uncertain'),
     research_question: z.string().optional(),
     // Phase 2 Upgrade: original synthesis fields

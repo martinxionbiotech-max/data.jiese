@@ -5,7 +5,7 @@ title: "Compulsive Sexual Behaviour Disorder (CSBD) in the ICD-11"
 content_type: research
 authors: "World Health Organization"
 year: 2022
-research_type: clinical-guideline
+research_type: diagnostic-classification
 main_question: "How does the WHO ICD-11 define and classify compulsive sexual behaviour?"
 clinical_relevance: "Provides the formal diagnostic criteria a clinician uses to identify CSBD."
 relevance_to_ppu: "Establishes the official diagnostic context for problematic sexual behaviour, though PPU itself is not a diagnosis."
