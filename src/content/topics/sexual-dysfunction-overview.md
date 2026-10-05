@@ -19,6 +19,8 @@ what_we_dont_know:
   - "How frequently pornography use is a primary cause of sexual dysfunction."
 what_is_debated:
   - "The role of pornography use in sexual dysfunction, and whether PIED is a distinct entity."
+related_questions:
+  - "is-it-okay-to-masturbate-without-porn"
 related_research:
   - landripet-2015
   - prause-pfaus-2015

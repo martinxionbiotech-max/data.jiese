@@ -2,7 +2,7 @@
 import BaseLayout from "../../../shared/components/BaseLayout.astro";
 import EvidenceSummary from "../../../shared/components/EvidenceSummary.astro";
 import { getCollection, render } from 'astro:content';
-import { DATA_SITE_URL } from "../../../shared/config/config";
+import { DATA_SITE_URL, MAIN_SITE_URL } from "../../../shared/config/config";
 import { CATEGORY_META } from "../../lib/meta";
 import { DATA_NAV } from "../../lib/nav";
 
@@ -137,6 +137,17 @@ const jsonLd: Record<string, unknown> = {
     <>
       <h2>Why the evidence is difficult to interpret</h2>
       <p>{t.why_evidence_difficult}</p>
+    </>
+  )}
+
+  {t.related_questions?.length > 0 && (
+    <>
+      <h2>Related questions</h2>
+      <ul>
+        {t.related_questions.map((q) => (
+          <li><a href={`${MAIN_SITE_URL}/problems/${q}/`}>{q.replaceAll("-", " ")}</a></li>
+        ))}
+      </ul>
     </>
   )}
 

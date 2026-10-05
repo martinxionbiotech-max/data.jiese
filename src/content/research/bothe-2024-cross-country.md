@@ -22,6 +22,8 @@ related_topics:
   - "ppu-definition"
 population: "International adults (42+ countries)"
 method: "Large international cross-sectional survey"
+relevant_questions:
+  - "is-my-porn-use-actually-a-problem"
 last_verified: "2026-10-05"
 ---
 ## Summary

@@ -22,6 +22,9 @@ what_is_debated:
 reasonable_conclusion: "Boredom is one of the most consistently named triggers in community reports, and the mechanism is plausible: unstructured time with access to a device. Whether boredom causes use or merely accompanies it, planning structured alternatives for idle time is a low-cost, sensible intervention."
 what_evidence_does_not_show: "Evidence does not establish that boredom specifically drives PPU versus other forms of unstructured free time, or that boredom-reduction interventions reduce use."
 why_evidence_difficult: "Boredom is under-studied in PPU research specifically; most of what is known comes from community reports and general self-control research."
+related_questions:
+  - "how-do-i-avoid-relapsing-when-alone"
+  - "why-is-boredom-a-trigger"
 related_research:
   - brand-2016-ipace
 last_verified: "2026-10-04"

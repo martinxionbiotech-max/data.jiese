@@ -19,6 +19,9 @@ what_we_dont_know:
   - "The prevalence of PPU in the general population."
 what_is_debated:
   - "How to define and measure PPU, and how it relates to CSBD."
+related_questions:
+  - "is-my-porn-use-actually-a-problem"
+  - "what-is-problematic-pornography-use"
 related_research:
   - bothe-2018-ppcs
   - grubbs-2019-moral-incongruence

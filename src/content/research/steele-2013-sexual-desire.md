@@ -29,6 +29,8 @@ related_topics:
 population: "Men and women viewing sexual images"
 sample_size: "52"
 method: "EEG study of neurophysiological response to sexual images"
+relevant_questions:
+  - "does-porn-use-affect-concentration"
 last_verified: "2026-10-04"
 ---
 

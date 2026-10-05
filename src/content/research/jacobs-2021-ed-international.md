@@ -25,6 +25,8 @@ related_topics:
   - "sexual-dysfunction-overview"
 population: "Young men, international web survey"
 method: "Multivariate cross-sectional survey"
+relevant_questions:
+  - "what-is-pied"
 relevant_claims:
   - "pornography-causes-ed"
 last_verified: "2026-10-05"

@@ -19,6 +19,9 @@ what_we_dont_know:
   - "Whether an addiction classification would improve or worsen outcomes for affected people."
 what_is_debated:
   - "The core question: is compulsive sexual behaviour an addiction, an impulse-control disorder, a compulsion, or none of these?"
+related_questions:
+  - "is-porn-addiction-real"
+  - "what-is-the-reboot-movement"
 related_research:
   - kraus-2016-should-csb-addiction
   - grubbs-2019-moral-incongruence

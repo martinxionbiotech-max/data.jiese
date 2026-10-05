@@ -25,6 +25,8 @@ related_topics:
   - "seeking-professional-help"
 population: "Published PPU treatment studies"
 method: "Systematic review"
+relevant_questions:
+  - "should-i-see-a-therapist"
 relevant_claims:
   - "blockers-prevent-relapse"
 last_verified: "2026-10-05"

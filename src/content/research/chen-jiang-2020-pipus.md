@@ -25,6 +25,8 @@ related_topics:
   - "self-assessment-limits"
 population: "Adults (scale comparison study)"
 method: "Mixed-methods scale comparison"
+relevant_questions:
+  - "is-my-porn-use-actually-a-problem"
 last_verified: "2026-10-05"
 ---
 ## Summary

@@ -24,6 +24,8 @@ related_topics:
   - "seeking-professional-help"
 population: "Published treatment literature on CSBD/PPU"
 method: "Preregistered systematic review"
+relevant_questions:
+  - "should-i-see-a-therapist"
 relevant_claims:
   - "blockers-prevent-relapse"
   - "willpower-alone-enough"

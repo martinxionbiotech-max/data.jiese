@@ -23,6 +23,8 @@ evidence_strength: "uncertain"
 reasonable_conclusion: "The 'flatline' is a community-described phase — reported low libido and mood weeks into abstinence — with no clinical definition or research support. It may describe real experiences, ordinary mood variation, or expectation effects; there is no way to tell from current data."
 what_evidence_does_not_show: "No evidence establishes a flatline phase, its timing, or its meaning for recovery."
 why_evidence_difficult: "The concept exists almost entirely within one community's narrative, making independent verification impossible so far."
+related_questions:
+  - "what-is-a-flatline"
 related_research:
   - park-2016-pied
   - de-alarcon-2019-systematic-review

@@ -19,6 +19,10 @@ what_we_dont_know:
   - "The causal direction between self-regulation and PPU."
 what_is_debated:
   - "Whether self-regulation failures in PPU reflect depleted 'willpower', habit, or motivational factors."
+related_questions:
+  - "do-website-blockers-work"
+  - "what-is-accountability"
+  - "what-should-i-do-instead-of-using-porn"
 related_research:
   - brand-2016-ipace
   - stark-2018-neuroscience-review

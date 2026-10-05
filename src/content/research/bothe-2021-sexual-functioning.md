@@ -26,6 +26,8 @@ related_topics:
   - "pied"
 population: "Large community sample, males and females"
 method: "Cross-sectional survey"
+relevant_questions:
+  - "can-porn-use-cause-erectile-dysfunction"
 relevant_claims:
   - "pornography-causes-ed"
   - "porn-use-always-addiction"

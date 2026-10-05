@@ -30,6 +30,8 @@ related_topics:
   - compulsive-sexual-behavior
 population: "Pooled US adult samples"
 method: "Survey studies testing an integrative model"
+relevant_questions:
+  - "how-do-i-handle-a-relapse-without-shame"
 last_verified: "2026-10-04"
 ---
 

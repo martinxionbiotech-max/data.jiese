@@ -26,6 +26,8 @@ related_topics:
   - "cue-reactivity-neural"
 population: "Adults with compulsive pornography use"
 method: "PET/SPECT neuroimaging study"
+relevant_questions:
+  - "does-porn-use-affect-dopamine"
 relevant_claims:
   - "porn-permanently-damages-brain"
 last_verified: "2026-10-05"

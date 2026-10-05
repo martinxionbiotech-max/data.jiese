@@ -23,6 +23,8 @@ evidence_strength: "moderate"
 reasonable_conclusion: "Sexual stimuli activate reward-related brain regions, and some studies find heightened cue-reactivity in people with compulsive sexual behavior. These findings support reward-system involvement; they do not support claims of 'destroyed reward circuits' or the need for extreme abstinence to 'repair' them."
 what_evidence_does_not_show: "No evidence establishes structural damage to reward circuits from pornography use or a measurable 'reset' process."
 why_evidence_difficult: "Cue-reactivity studies show associations, not damage; heightened responses could precede, follow, or be unrelated to problematic use."
+related_questions:
+  - "can-porn-affect-testosterone"
 related_research:
   - voon-2014-cue-reactivity
   - gola-2017-fmri

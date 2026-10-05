@@ -27,6 +27,8 @@ related_topics:
   - behavioral-addiction-debate
   - ppu-definition
   - relapse
+relevant_questions:
+  - "can-i-recover-alone"
 relevant_claims: ["porn-withdrawal-clinical-syndrome"]
 population: "Published literature on online pornography addiction"
 method: "Systematic review"

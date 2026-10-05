@@ -23,6 +23,9 @@ related_topics:
   - "ppu"
 population: "Adult men across three samples (one longitudinal)"
 method: "Cross-sectional + latent growth curve analyses"
+relevant_questions:
+  - "can-porn-use-cause-erectile-dysfunction"
+  - "what-is-pied"
 relevant_claims:
   - "pornography-causes-ed"
 last_verified: "2026-10-05"

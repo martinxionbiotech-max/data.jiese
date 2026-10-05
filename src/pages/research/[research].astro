@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../../shared/components/BaseLayout.astro";
 import { getCollection, render } from 'astro:content';
-import { DATA_SITE_URL } from "../../../shared/config/config";
+import { DATA_SITE_URL, MAIN_SITE_URL } from "../../../shared/config/config";
 import { TIER_LABELS, EVIDENCE_LABELS, RESEARCH_TYPE_LABELS, SOURCE_TYPE_LABELS } from "../../lib/meta";
 import { DATA_NAV } from "../../lib/nav";
 
@@ -119,6 +119,17 @@ const jsonLd: Record<string, unknown> = {
     <h2>Relevance to problematic pornography use</h2>
     <p>{r.relevance_to_ppu ?? "Not recorded."}</p>
   </section>
+
+  {r.relevant_questions?.length > 0 && (
+    <section>
+      <h2>Relevant questions</h2>
+      <ul>
+        {r.relevant_questions.map((q) => (
+          <li><a href={`${MAIN_SITE_URL}/problems/${q}/`}>{q.replaceAll("-", " ")}</a></li>
+        ))}
+      </ul>
+    </section>
+  )}
 
   <section>
     <h2>Related topics</h2>

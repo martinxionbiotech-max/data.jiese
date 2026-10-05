@@ -23,6 +23,9 @@ evidence_strength: "limited"
 reasonable_conclusion: "Loneliness appears as a recurring context in recovery reports and is independently associated with many excessive behaviors. The defensible conclusion is that loneliness is a plausible contributing context for PPU — one worth addressing directly — not a demonstrated cause. Building real social connection is independently valuable regardless of its effect on use."
 what_evidence_does_not_show: "No research establishes a causal role of loneliness specifically in problematic pornography use, or that reducing loneliness alone reduces use."
 why_evidence_difficult: "Loneliness correlates with depression, anxiety, and unstructured time, making its specific contribution hard to isolate in observational data."
+related_questions:
+  - "how-do-i-avoid-relapsing-when-alone"
+  - "how-do-i-tell-someone-i-trust"
 related_research:
   - brand-2016-ipace
 last_verified: "2026-10-04"

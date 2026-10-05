@@ -20,6 +20,11 @@ what_we_dont_know:
 what_is_debated:
   - "Whether PPU should be defined by behaviour, by distress, or by self-identification as 'addicted'."
   - "How PPU relates to the formal diagnosis of CSBD."
+related_questions:
+  - "do-i-have-to-quit-completely"
+  - "is-it-okay-to-masturbate-without-porn"
+  - "is-masturbation-the-same-as-porn-use"
+  - "will-quitting-porn-fix-my-relationship"
 related_research:
   - grubbs-2019-moral-incongruence
   - bothe-2018-ppcs

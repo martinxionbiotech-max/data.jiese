@@ -8,5 +8,5 @@ export const DATA_NAV = [
   { label: 'Matrix', href: '/evidence-matrix/' },
   { label: 'Controversies', href: '/controversies/' },
   { label: 'References', href: '/references/' },
-  { label: 'Main Site', href: MAIN_SITE_URL },
+  { label: 'SelfControlAtlas', href: MAIN_SITE_URL },
 ];

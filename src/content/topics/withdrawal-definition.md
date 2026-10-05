@@ -23,6 +23,13 @@ evidence_strength: "limited"
 reasonable_conclusion: "Some people report discomfort — urges, irritability, low mood — in the first weeks of stopping. Whether these constitute a clinical withdrawal syndrome is not established. The reports are real; the diagnostic label is not."
 what_evidence_does_not_show: "Evidence does not establish a medically defined withdrawal syndrome for pornography, with predictable symptoms and timeline."
 why_evidence_difficult: "Reported symptoms overlap with everyday stress and mood variation, and no controlled studies isolate abstinence effects."
+related_questions:
+  - "how-long-does-porn-withdrawal-last"
+  - "how-long-until-i-feel-better"
+  - "is-it-normal-to-have-strong-urges-at-first"
+  - "what-are-withdrawal-symptoms"
+  - "what-is-the-90-day-challenge"
+  - "what-is-the-reboot-movement"
 related_research:
   - bothe-2018-ppcs
   - kraus-2016-should-csb-addiction

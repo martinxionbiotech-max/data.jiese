@@ -26,6 +26,9 @@ related_topics:
   - emotion-regulation
   - cue-reactivity
   - habit-formation
+relevant_questions:
+  - "can-porn-affect-my-sleep"
+  - "how-do-i-deal-with-urges-at-night"
 relevant_claims: ["porn-permanently-damages-brain"]
 method: "Theoretical model paper (I-PACE framework)"
 last_verified: "2026-10-04"

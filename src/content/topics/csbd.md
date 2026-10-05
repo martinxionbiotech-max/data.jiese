@@ -24,6 +24,9 @@ evidence_strength: "strong"
 reasonable_conclusion: "CSBD is an officially recognized diagnosis (ICD-11) with established diagnostic guidelines. It is classified among impulse-control disorders — deliberately not among substance or behavioral addictions — which matters for how it should be discussed."
 what_evidence_does_not_show: "ICD-11 inclusion does not establish a specific neurobiological mechanism, and does not make CSBD an 'addiction' in the WHO's classification."
 why_evidence_difficult: "The classification decision itself was debated extensively before publication; the addiction vs compulsion framing remains an active scientific controversy."
+related_questions:
+  - "is-porn-addiction-real"
+  - "what-is-csbd"
 related_research:
   - csbd-icd11
   - kraus-2018-csbd-icd11

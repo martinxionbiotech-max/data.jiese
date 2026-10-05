@@ -20,6 +20,9 @@ what_we_dont_know:
   - "Long-term outcomes of treatment for PPU/CSBD specifically."
 what_is_debated:
   - "The optimal treatment framework, given the unresolved classification debate."
+related_questions:
+  - "how-do-i-tell-someone-i-trust"
+  - "should-i-see-a-therapist"
 related_research:
   - csbd-icd11
   - kraus-2018-csbd-icd11

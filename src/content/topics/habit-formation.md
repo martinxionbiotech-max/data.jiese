@@ -23,6 +23,12 @@ evidence_strength: "moderate"
 reasonable_conclusion: "Habit research offers a genuinely useful framework for recovery: behavior cued by context and time becomes automatic, and replacement — building new responses to old cues — has broader support than pure suppression. This is one of the few areas where general psychological science robustly informs recovery practice."
 what_evidence_does_not_show: "Habit research does not establish specific timelines (like '21 days' or '90 days') for breaking any habit, including pornography use."
 why_evidence_difficult: "Most habit research concerns simple behaviors; generalization to sexual behavior and pornography use is plausible but not directly tested."
+related_questions:
+  - "do-website-blockers-work"
+  - "does-exercise-help"
+  - "how-do-i-set-realistic-goals"
+  - "should-i-track-my-streak"
+  - "what-should-i-do-instead-of-using-porn"
 related_research:
   - brand-2016-ipace
   - de-alarcon-2019-systematic-review

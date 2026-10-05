@@ -22,6 +22,13 @@ what_is_debated:
 reasonable_conclusion: "The distinction between urges (time-limited, experienceable without acting) and cravings (persistent desire) is clinically useful and matches what community reports describe: urges rise and fall, and the skill is riding them out rather than eliminating them. This framing supports urge-surfing and acceptance-based approaches."
 what_evidence_does_not_show: "Evidence does not establish a firm boundary between urges and cravings, or that urge-riding techniques outperform other strategies for PPU specifically."
 why_evidence_difficult: "Terminology varies across fields (psychology, addiction medicine, community vocabulary), and direct measurement of 'urges' in PPU studies is limited."
+related_questions:
+  - "does-meditation-help"
+  - "how-do-i-deal-with-sexual-thoughts"
+  - "is-it-normal-to-have-strong-urges-at-first"
+  - "what-is-the-chaser-effect"
+  - "what-should-i-do-instead-of-using-porn"
+  - "why-do-urges-come-back"
 related_research:
   - voon-2014-cue-reactivity
   - gola-2017-fmri

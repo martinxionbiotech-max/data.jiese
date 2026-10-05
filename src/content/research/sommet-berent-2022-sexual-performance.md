@@ -24,6 +24,8 @@ related_topics:
   - "sexual-dysfunction-overview"
 population: "Large longitudinal adult sample"
 method: "Longitudinal survey"
+relevant_questions:
+  - "can-porn-use-cause-erectile-dysfunction"
 relevant_claims:
   - "pornography-causes-ed"
 last_verified: "2026-10-05"

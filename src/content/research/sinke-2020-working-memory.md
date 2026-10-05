@@ -25,6 +25,8 @@ related_topics:
   - "compulsive-sexual-behavior"
 population: "Men with compulsive sexual behavior"
 method: "fMRI working-memory task"
+relevant_questions:
+  - "does-porn-use-affect-concentration"
 last_verified: "2026-10-05"
 ---
 ## Summary

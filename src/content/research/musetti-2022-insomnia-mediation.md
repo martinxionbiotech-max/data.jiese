@@ -25,6 +25,9 @@ related_topics:
   - "stress"
 population: "Adults during COVID-19 pandemic"
 method: "Cross-sectional mediation analysis"
+relevant_questions:
+  - "can-porn-affect-my-sleep"
+  - "what-are-withdrawal-symptoms"
 last_verified: "2026-10-05"
 ---
 ## Summary
