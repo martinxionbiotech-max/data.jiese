@@ -19,6 +19,9 @@ what_we_dont_know:
   - "Which specific emotion-regulation skills are most effective here."
 what_is_debated:
   - "How central emotion regulation is relative to habit, cue reactivity, and reward processes in driving PPU."
+reasonable_conclusion: "Emotion regulation difficulties — using pornography to manage stress, boredom, or low mood — are well-documented in both clinical and community accounts of PPU. This is one of the better-supported mechanisms: people use sexual content partly as a coping behavior, and recovery involves building alternative ways to manage emotions."
+what_evidence_does_not_show: "Evidence does not establish that poor emotion regulation causes PPU rather than co-occurring with it, or that any single regulation technique is superior."
+why_evidence_difficult: "Coping-motivated use is hard to measure directly; studies rely on self-report, and emotion regulation is itself a broad construct with many definitions."
 related_research:
   - brand-2016-ipace
   - stark-2018-neuroscience-review

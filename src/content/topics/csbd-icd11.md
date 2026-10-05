@@ -1,6 +1,6 @@
 ---
 topic_id: csbd-icd11
-title: "Compulsive Sexual Behaviour Disorder (CSBD) in the ICD-11"
+title: "The ICD-11 CSBD Classification, Explained"
 category: definitions
 concept: "Compulsive Sexual Behaviour Disorder (CSBD) is a diagnostic category in the WHO's ICD-11 (code 6C72). It describes a persistent pattern of failure to control intense, repetitive sexual impulses or urges, resulting in repetitive sexual behaviour that causes marked distress or significant impairment."
 research_summary: "CSBD was included in the ICD-11, which came into effect in 2022, under the 'Impulse control disorders' chapter. The classification deliberately avoids the term 'sexual addiction' and does not treat CSBD as a substance-related or addictive disorder."

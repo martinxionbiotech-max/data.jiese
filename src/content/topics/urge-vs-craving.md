@@ -19,6 +19,9 @@ what_we_dont_know:
   - "Which is more predictive of actual behaviour."
 what_is_debated:
   - "How much the urge/craving distinction matters for understanding or treating PPU."
+reasonable_conclusion: "The distinction between urges (time-limited, experienceable without acting) and cravings (persistent desire) is clinically useful and matches what community reports describe: urges rise and fall, and the skill is riding them out rather than eliminating them. This framing supports urge-surfing and acceptance-based approaches."
+what_evidence_does_not_show: "Evidence does not establish a firm boundary between urges and cravings, or that urge-riding techniques outperform other strategies for PPU specifically."
+why_evidence_difficult: "Terminology varies across fields (psychology, addiction medicine, community vocabulary), and direct measurement of 'urges' in PPU studies is limited."
 related_research:
   - voon-2014-cue-reactivity
   - gola-2017-fmri

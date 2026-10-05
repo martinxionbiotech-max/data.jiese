@@ -19,6 +19,9 @@ what_we_dont_know:
   - "Which stress-management interventions most reduce problematic use."
 what_is_debated:
   - "How much of the stress–use link is coping behaviour versus simple availability and habit."
+reasonable_conclusion: "Stress is among the most frequently reported relapse contexts in community data and has broader support in addiction research as a trigger for lapses. The practical conclusion — build stress management into any recovery plan — is well-founded even though the PPU-specific evidence is thin."
+what_evidence_does_not_show: "No research establishes a stress-PPU causal mechanism, and stress alone does not explain most relapses (it typically combines with other triggers)."
+why_evidence_difficult: "Stress is retrospective and subjective in self-reports, and community posts about relapse are self-selected toward stressful moments."
 related_research:
   - brand-2016-ipace
   - de-alarcon-2019-systematic-review

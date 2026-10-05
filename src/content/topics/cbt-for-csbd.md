@@ -19,6 +19,9 @@ what_we_dont_know:
   - "Which components of CBT are most effective here."
 what_is_debated:
   - "The optimal treatment framework for CSBD, given the unresolved classification debate."
+reasonable_conclusion: "CBT is the best-studied professional approach for compulsive sexual behavior, though trials specific to pornography use are scarce. Its core tools — identifying triggers, challenging unhelpful thoughts, and building alternative behaviors — also match what community reports describe as effective. CBT should be understood as a supported professional treatment, not a quick fix; outcomes vary by person."
+what_evidence_does_not_show: "No trial establishes CBT's superiority over other therapies for PPU specifically, or guarantees any outcome. The evidence supports CBT as a reasonable, evidence-informed option rather than a proven cure."
+why_evidence_difficult: "Most CBT trials target CSB broadly defined, with varied outcome measures and small samples; PPU-specific trials are rare."
 related_research:
   - csbd-icd11
   - kraus-2018-csbd-icd11

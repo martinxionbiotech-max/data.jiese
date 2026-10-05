@@ -20,9 +20,9 @@ what_we_dont_know:
 what_is_debated:
   - "How much pornography use is a cause versus a consequence of loneliness."
 evidence_strength: "limited"
-reasonable_conclusion: "Loneliness appears as a common context in community reports of relapse, and loneliness is independently associated with many forms of excessive behavior. The reasonable interpretation: loneliness is a plausible contributing context, not a demonstrated cause of PPU."
-what_evidence_does_not_show: "No research establishes a causal role of loneliness specifically in problematic pornography use."
-why_evidence_difficult: "Loneliness correlates with depression, anxiety, and unstructured time — separating its specific contribution is difficult in observational data."
+reasonable_conclusion: "Loneliness appears as a recurring context in recovery reports and is independently associated with many excessive behaviors. The defensible conclusion is that loneliness is a plausible contributing context for PPU — one worth addressing directly — not a demonstrated cause. Building real social connection is independently valuable regardless of its effect on use."
+what_evidence_does_not_show: "No research establishes a causal role of loneliness specifically in problematic pornography use, or that reducing loneliness alone reduces use."
+why_evidence_difficult: "Loneliness correlates with depression, anxiety, and unstructured time, making its specific contribution hard to isolate in observational data."
 related_research:
   - brand-2016-ipace
 last_verified: "2026-10-04"

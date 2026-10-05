@@ -19,6 +19,9 @@ what_we_dont_know:
   - "Which relapse-prevention techniques work best for PPU."
 what_is_debated:
   - "Whether abstinence or harm reduction is the more appropriate goal (and whether that affects how 'relapse' is defined)."
+reasonable_conclusion: "Relapse is best understood as a common, non-linear feature of behavior change rather than failure. Community data shows lapses cluster around identifiable situations (stress, solitude, nighttime, boredom), and treating relapse as information — analyzing what preceded it — is both community consensus and consistent with broader relapse-prevention research."
+what_evidence_does_not_show: "Evidence does not establish that relapse predicts final outcome, that any number of lapses means a strategy failed, or that specific timelines prevent relapse."
+why_evidence_difficult: "Relapse definitions vary, self-reports are biased toward post-lapse moments, and long-term follow-up data on PPU recovery is essentially absent."
 related_research:
   - bothe-2018-ppcs
   - de-alarcon-2019-systematic-review

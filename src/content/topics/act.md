@@ -2,42 +2,39 @@
 topic_id: act
 title: "Acceptance and Commitment Therapy (ACT)"
 category: treatment
-concept: "Acceptance and Commitment Therapy (ACT) is a psychotherapy that focuses on accepting difficult internal experiences (urges, thoughts, feelings) while committing to valued action, rather than trying to eliminate those experiences."
-research_summary: "ACT has an evidence base for several conditions, and its emphasis on 'urge surfing' and values is often applied to compulsive behaviours. Direct evidence for ACT specifically in PPU/CSBD is limited."
-community_observation: "Community members commonly use ACT-adjacent ideas — such as observing urges without acting — without naming the therapy, and report these as helpful."
+concept: "ACT is a therapeutic approach that combines acceptance of difficult internal experiences with commitment to value-driven behavior change. Instead of trying to eliminate unwanted thoughts and urges, ACT teaches observing them without acting on them, while pursuing personally meaningful goals."
+research_summary: "ACT has evidence in anxiety, depression, and some addictive behaviors. Its core process — psychological flexibility, the ability to experience urges without being controlled by them — is conceptually relevant to PPU, though direct trials on pornography use are limited."
+community_observation: "Elements of ACT-like practice appear in community guidance (observing urges without acting, 'urge surfing'), although community content rarely names ACT and often frames it within abstinence vocabulary."
 practical_implications:
-  - "ACT-style skills (noticing urges without acting, connecting behaviour to values) are low-risk and widely applicable."
-  - "Formal ACT therapy should be delivered by a qualified practitioner."
+  - "Observing urges as passing events rather than commands to act"
+  - "Clarifying values — what the person wants recovery FOR — rather than focusing only on what to avoid"
+  - "Accepting discomfort during urges instead of fighting them, which community reports describe as counterproductive"
 limitations:
-  - "Few controlled studies test ACT specifically for PPU or CSBD."
-  - "As with CBT, this describes an approach, not a guaranteed treatment."
+  - "Direct ACT trials for PPU are scarce; generalization from other conditions is plausible but unproven."
 what_we_know:
-  - "ACT is an evidence-supported therapy for several conditions."
-  - "Acceptance-based skills (e.g., 'urge surfing') are commonly used in behaviour change."
+  - "ACT is an evidence-supported therapy for several conditions that co-occur with PPU."
+  - "Psychological flexibility is a well-studied construct in behavior change."
 what_we_dont_know:
-  - "How effective ACT is specifically for PPU/CSBD relative to other approaches."
-  - "Which ACT components matter most here."
+  - "Whether ACT outperforms other therapies for PPU specifically."
 what_is_debated:
-  - "Whether acceptance-based approaches outperform more directive cognitive-behavioural methods for compulsive behaviours."
+  - "How much formal ACT training is needed versus self-guided practice of its principles."
+evidence_strength: "moderate"
+reasonable_conclusion: "ACT offers a conceptually strong fit for PPU — its stance toward urges matches what community reports describe as effective (observe, don't fight, act on values). Direct PPU evidence is limited, so it should be presented as a promising, plausible approach rather than a validated treatment."
+what_evidence_does_not_show: "No trial establishes ACT as superior for PPU, and ACT techniques alone are not a substitute for professional care when use causes severe distress."
+why_evidence_difficult: "ACT's effects are measured through psychological-flexibility constructs that vary across studies, and PPU-specific trials are essentially absent."
 related_research:
-  - stark-2018-neuroscience-review
-last_verified: "2026-10-04"
+  - de-alarcon-2019-systematic-review
+related_topics:
+  - cbt-for-csbd
+  - urge-vs-craving
+  - emotion-regulation
+related_questions:
+  - how-do-i-deal-with-sexual-thoughts
+  - should-i-see-a-therapist
+last_verified: "2026-10-05"
 ---
+ACT is a therapy framework that changes the relationship with unwanted internal experiences rather than eliminating them. For PPU, that means treating urges as events to be observed rather than commands to obey, while building behavior around what the person actually values.
 
-## What ACT is
+The evidence for ACT is strongest in conditions that frequently co-occur with PPU — anxiety, depression, and substance-related behaviors. Direct PPU trials are limited, so this platform treats ACT as conceptually promising and empirically adjacent, not as a validated PPU treatment.
 
-Acceptance and Commitment Therapy (ACT) helps people accept difficult internal
-experiences — urges, thoughts, and feelings — while committing to action in line with
-their values, rather than trying to eliminate those experiences.
-
-## Its relevance to PPU
-
-ACT's emphasis on "urge surfing" — observing an urge as it rises and falls without acting
-— is widely used in behaviour change and is often reflected in community recovery advice.
-However, direct controlled evidence for ACT specifically in PPU/CSBD is limited.
-
-## Practical relevance
-
-ACT-style skills are low-risk and broadly applicable, but formal ACT therapy should be
-delivered by a qualified practitioner. See [CBT for CSBD](/topics/cbt-for-csbd/) and
-[seeking professional help](/topics/seeking-professional-help/).
+Community content rarely names ACT, but its central move — don't fight the urge, observe it and redirect toward valued activity — matches what experienced members describe as the difference between struggling and recovering. This convergence is notable and is presented here as an observation, not as evidence of ACT's efficacy.
